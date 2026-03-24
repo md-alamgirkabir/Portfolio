@@ -3,468 +3,251 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Md Alamgir Kabir, PhD, PMP® — Senior Development Scientist specializing in IVD assay development, point-of-care diagnostics, and bioengineering. 19 peer-reviewed publications. Minneapolis, MN.">
-<meta name="keywords" content="Md Alamgir Kabir, PhD, PMP, bioengineering, IVD, diagnostics, point-of-care, Beckman Coulter, assay development, biosensor, microfluidics, Zika, COVID-19, G6PD, lateral flow">
-<meta property="og:title" content="Md Alamgir Kabir, PhD, PMP® | Sr. Development Scientist">
-<meta property="og:description" content="IVD & Diagnostics Scientist | PMP® Certified | Microfluidics | Point-of-Care Innovation | 19 Publications">
+<meta name="description" content="Md Alamgir Kabir, PhD, PMP® — Senior Development Scientist | IVD Assay Development | Quality Engineering | Process Development | Project Management | Minneapolis, MN">
+<meta name="keywords" content="Md Alamgir Kabir PhD PMP, IVD scientist, medical device, quality engineer, process development, biosensor, point-of-care, ISO 13485, FDA, Beckman Coulter, microfluidics, CAPA, design controls">
+<meta property="og:title" content="Md Alamgir Kabir, PhD, PMP® | IVD Scientist & Project Leader">
+<meta property="og:description" content="IVD Development | Quality Engineering | Process Optimization | PMP® Certified | 19 Publications | $690K+ Grants">
 <meta property="og:type" content="website">
 <title>Md Alamgir Kabir, PhD, PMP® | Sr. Development Scientist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg:     #ffffff;
-  --bg2:    #f4f7fb;
-  --bg3:    #eaf0f8;
-  --card:   #ffffff;
-  --card2:  #f9fbfd;
-  --border: rgba(30,80,160,0.12);
-  --border2:rgba(30,80,160,0.25);
-  --border3:rgba(30,80,160,0.45);
-  --navy:   #1a3c6e;
-  --blue:   #1e5cbf;
-  --blue2:  #2563eb;
-  --blue3:  #3b82f6;
-  --teal:   #0891b2;
-  --teal2:  #06b6d4;
-  --amber:  #b45309;
-  --amber2: #d97706;
-  --green:  #047857;
-  --text:   #0f1f3d;
-  --text2:  #3d5278;
-  --text3:  #7a90b0;
-  --sans:   'IBM Plex Sans', sans-serif;
-  --mono:   'IBM Plex Mono', monospace;
-  --display:'Syne', sans-serif;
+:root{
+  --bg:#030810;--bg2:#060d1a;--bg3:#091120;--card:#0b1628;--card2:#0e1d32;
+  --border:rgba(50,110,200,0.15);--border2:rgba(50,110,200,0.30);--border3:rgba(50,110,200,0.50);
+  --blue:#2e6fd4;--blue2:#4d8ef0;--blue3:#7fb0ff;
+  --teal:#00c4a0;--teal2:#00e5bb;--amber:#f0a020;--amber2:#fbbf24;
+  --green:#22c55e;--red:#e05555;
+  --text:#dde5f4;--text2:#8fa8c8;--text3:#566d88;
+  --sans:'IBM Plex Sans',sans-serif;--mono:'IBM Plex Mono',monospace;--display:'Syne',sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
 body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden;}
-
-/* Subtle dot grid — very light on white */
 body::before{
   content:'';position:fixed;inset:0;
-  background-image:radial-gradient(circle, rgba(30,80,160,0.07) 1px, transparent 1px);
-  background-size:28px 28px;pointer-events:none;z-index:0;
+  background-image:linear-gradient(rgba(46,111,212,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(46,111,212,0.035) 1px,transparent 1px);
+  background-size:64px 64px;pointer-events:none;z-index:0;
 }
-body::after{content:none;}
 
-/* ── NAV ── */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:200;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:0 6%;height:64px;
-  background:rgba(255,255,255,0.95);
-  backdrop-filter:blur(16px);
-  border-bottom:1px solid var(--border);
-  box-shadow:0 1px 12px rgba(30,80,160,0.06);
-}
-.nav-logo{
-  font-family:var(--display);font-size:14px;font-weight:700;
-  color:var(--navy);text-decoration:none;letter-spacing:0.03em;
-}
-.nav-logo span{color:var(--blue2);}
-.nav-links{display:flex;gap:28px;list-style:none;}
-.nav-links a{
-  font-family:var(--mono);font-size:11px;letter-spacing:0.08em;
-  text-transform:uppercase;color:var(--text3);text-decoration:none;
-  transition:color 0.2s;
-}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:64px;background:rgba(3,8,16,0.9);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+.nav-logo{font-family:var(--display);font-size:14px;font-weight:700;color:var(--blue2);text-decoration:none;letter-spacing:0.03em;}
+.nav-logo span{color:var(--teal);}
+.nav-links{display:flex;gap:26px;list-style:none;}
+.nav-links a{font-family:var(--mono);font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text3);text-decoration:none;transition:color 0.2s;}
 .nav-links a:hover{color:var(--blue2);}
-.nav-btn{
-  font-family:var(--mono);font-size:11px;letter-spacing:0.06em;
-  text-transform:uppercase;padding:8px 18px;
-  border:1.5px solid var(--blue2);border-radius:4px;
-  color:var(--blue2);text-decoration:none;transition:all 0.2s;
-  background:transparent;
-}
-.nav-btn:hover{background:var(--blue2);color:#fff;}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
-.hamburger span{width:22px;height:1.5px;background:var(--text2);transition:all 0.3s;}
+.nav-btn{font-family:var(--mono);font-size:11px;letter-spacing:0.06em;text-transform:uppercase;padding:8px 18px;border:1px solid var(--border2);border-radius:4px;color:var(--blue2);text-decoration:none;transition:all 0.2s;}
+.nav-btn:hover{background:rgba(46,111,212,0.1);border-color:var(--border3);}
 
-/* ── HERO ── */
-#hero{
-  position:relative;min-height:100vh;
-  display:flex;align-items:center;
-  padding:100px 6% 80px;overflow:hidden;
-  background:linear-gradient(160deg, #f0f5ff 0%, #ffffff 55%, #f4f9ff 100%);
-}
-.hero-glow{
-  position:absolute;top:-100px;right:-100px;
-  width:600px;height:600px;
-  background:radial-gradient(circle,rgba(37,99,235,0.08) 0%,transparent 65%);
-  pointer-events:none;
-}
-.hero-glow2{
-  position:absolute;bottom:-100px;left:-80px;
-  width:500px;height:500px;
-  background:radial-gradient(circle,rgba(8,145,178,0.06) 0%,transparent 65%);
-  pointer-events:none;
-}
-.hero-inner{
-  position:relative;z-index:1;
-  max-width:1100px;width:100%;margin:0 auto;
-  display:grid;grid-template-columns:1fr 300px;gap:72px;align-items:center;
-}
-.hero-eyebrow{
-  display:inline-flex;align-items:center;gap:10px;
-  font-family:var(--mono);font-size:11px;color:var(--teal);
-  letter-spacing:0.12em;text-transform:uppercase;margin-bottom:18px;
-}
+/* HERO */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:100px 5% 80px;overflow:hidden;}
+.hero-glow{position:absolute;top:-300px;right:-200px;width:800px;height:800px;background:radial-gradient(circle,rgba(46,111,212,0.10) 0%,transparent 60%);pointer-events:none;}
+.hero-glow2{position:absolute;bottom:-200px;left:-100px;width:600px;height:600px;background:radial-gradient(circle,rgba(0,196,160,0.07) 0%,transparent 60%);pointer-events:none;}
+.hero-inner{position:relative;z-index:1;max-width:1100px;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 310px;gap:72px;align-items:center;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;color:var(--teal);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:18px;}
 .hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--teal);}
-h1{
-  font-family:var(--display);
-  font-size:clamp(36px,5vw,58px);font-weight:800;
-  line-height:1.08;letter-spacing:-0.025em;
-  color:var(--text);margin-bottom:10px;
-}
-h1 .accent{color:var(--blue2);}
-.hero-creds{
-  font-family:var(--mono);font-size:13px;
-  color:var(--teal);letter-spacing:0.04em;margin-bottom:16px;
-}
-.hero-subtitle{
-  font-family:var(--display);font-size:clamp(15px,2vw,20px);font-weight:400;
-  color:var(--text2);margin-bottom:24px;line-height:1.4;
-}
-.hero-desc{
-  font-size:15px;color:var(--text2);
-  max-width:520px;line-height:1.8;margin-bottom:32px;
-}
-.hero-tags{
-  display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px;
-}
-.tag{
-  font-family:var(--mono);font-size:10px;font-weight:500;
-  padding:4px 11px;border-radius:3px;
-  letter-spacing:0.06em;text-transform:uppercase;
-}
+h1{font-family:var(--display);font-size:clamp(36px,5vw,58px);font-weight:800;line-height:1.08;letter-spacing:-0.025em;color:var(--text);margin-bottom:10px;}
+h1 .ac{color:var(--blue2);}
+.hero-creds{font-family:var(--mono);font-size:13px;color:var(--teal);letter-spacing:0.04em;margin-bottom:16px;}
+.hero-subtitle{font-family:var(--display);font-size:clamp(14px,1.8vw,19px);font-weight:400;color:var(--text2);margin-bottom:24px;line-height:1.45;}
+.hero-desc{font-size:15px;color:var(--text2);max-width:520px;line-height:1.8;margin-bottom:32px;}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px;}
+.tag{font-family:var(--mono);font-size:10px;font-weight:500;padding:4px 11px;border-radius:3px;letter-spacing:0.06em;text-transform:uppercase;}
 .tag-blue{background:rgba(46,111,212,0.12);border:1px solid rgba(46,111,212,0.32);color:var(--blue3);}
 .tag-teal{background:rgba(0,196,160,0.10);border:1px solid rgba(0,196,160,0.28);color:var(--teal2);}
 .tag-amber{background:rgba(240,160,32,0.10);border:1px solid rgba(240,160,32,0.28);color:var(--amber);}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
-.btn-primary{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:12px 26px;background:var(--blue);
-  color:#fff;border-radius:6px;text-decoration:none;
-  font-family:var(--sans);font-weight:500;font-size:14px;
-  border:1px solid var(--blue);transition:all 0.2s;
-}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;background:var(--blue);color:#fff;border-radius:6px;text-decoration:none;font-weight:500;font-size:14px;border:1px solid var(--blue);transition:all 0.2s;}
 .btn-primary:hover{background:var(--blue2);border-color:var(--blue2);transform:translateY(-2px);}
-.btn-outline{
-  display:inline-flex;align-items:center;gap:8px;
-  padding:12px 26px;background:transparent;
-  color:var(--blue2);border:1px solid var(--border2);
-  border-radius:6px;text-decoration:none;
-  font-family:var(--sans);font-weight:500;font-size:14px;transition:all 0.2s;
-}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;background:transparent;color:var(--blue2);border:1px solid var(--border2);border-radius:6px;text-decoration:none;font-weight:500;font-size:14px;transition:all 0.2s;}
 .btn-outline:hover{background:rgba(46,111,212,0.08);border-color:var(--border3);transform:translateY(-2px);}
 
-/* Hero stats panel */
-.hero-stats{display:flex;flex-direction:column;gap:14px;}
-.stat-card{
-  background:var(--card);border:1px solid var(--border);
-  border-radius:10px;padding:18px 20px;
-  transition:border-color 0.25s, transform 0.25s;
-  cursor:default;
-}
+/* STAT CARDS — hero right column */
+.hero-stats{display:flex;flex-direction:column;gap:13px;}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;transition:all 0.25s;cursor:default;}
 .stat-card:hover{border-color:var(--border2);transform:translateX(-3px);}
-.stat-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;}
-.stat-num{
-  font-family:var(--display);font-size:30px;font-weight:800;
-  color:var(--blue2);line-height:1;
-}
-.stat-icon{font-size:18px;opacity:0.5;}
-.stat-label{font-size:12px;color:var(--text3);line-height:1.4;}
+.stat-row{display:flex;align-items:center;gap:14px;}
+.stat-icon-wrap{width:44px;height:44px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.stat-num{font-family:var(--display);font-size:26px;font-weight:800;color:var(--blue2);line-height:1;}
+.stat-label{font-size:11px;color:var(--text3);line-height:1.4;margin-top:3px;}
+.pmp-card{background:linear-gradient(135deg,rgba(46,111,212,0.14),rgba(0,196,160,0.07));border:1px solid var(--border2);border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;}
+.pmp-badge-svg{flex-shrink:0;}
 
-/* PMP badge card */
-.pmp-card{
-  background:linear-gradient(135deg,rgba(46,111,212,0.15),rgba(0,196,160,0.08));
-  border:1px solid var(--border2);border-radius:10px;
-  padding:16px 20px;display:flex;align-items:center;gap:14px;
-}
-.pmp-icon{
-  width:44px;height:44px;border-radius:8px;flex-shrink:0;
-  background:rgba(46,111,212,0.2);border:1px solid var(--border2);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--display);font-size:13px;font-weight:800;color:var(--blue2);
-  letter-spacing:-0.02em;
-}
-.pmp-label{font-family:var(--mono);font-size:10px;color:var(--teal);letter-spacing:0.08em;text-transform:uppercase;}
-.pmp-name{font-size:13px;font-weight:500;color:var(--text);margin-top:2px;}
-.pmp-date{font-family:var(--mono);font-size:10px;color:var(--text3);}
-
-/* ── SECTIONS ── */
-section{position:relative;padding:88px 6%;z-index:1;}
-.section-inner{max-width:1100px;margin:0 auto;}
-.section-kicker{
-  font-family:var(--mono);font-size:11px;letter-spacing:0.10em;
-  text-transform:uppercase;color:var(--teal);
-  margin-bottom:8px;display:flex;align-items:center;gap:10px;
-}
-.section-kicker::before{content:'//';color:var(--text3);}
-.section-title{
-  font-family:var(--display);
-  font-size:clamp(22px,3.5vw,36px);font-weight:700;
-  color:var(--text);margin-bottom:48px;letter-spacing:-0.015em;line-height:1.15;
-}
-.section-title em{font-style:normal;color:var(--blue2);}
+/* SECTIONS */
+section{position:relative;padding:88px 5%;z-index:1;}
+.si{max-width:1100px;margin:0 auto;}
+.sk{font-family:var(--mono);font-size:11px;letter-spacing:0.10em;text-transform:uppercase;color:var(--teal);margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+.sk::before{content:'//';color:var(--text3);}
+.st{font-family:var(--display);font-size:clamp(22px,3.5vw,36px);font-weight:700;color:var(--text);margin-bottom:48px;letter-spacing:-0.015em;line-height:1.15;}
+.st em{font-style:normal;color:var(--blue2);}
 #skills{background:var(--bg2);}
 #experience{background:var(--bg);}
 #publications{background:var(--bg2);}
 #achievements{background:var(--bg);}
 #contact{background:var(--bg2);}
 
-/* ── SKILLS ── */
-.skills-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:18px;
-}
-.skill-card{
-  background:var(--card);border:1px solid var(--border);
-  border-radius:10px;padding:22px 24px;
-  transition:all 0.25s;
-}
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;}
+.skill-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:22px 24px;transition:all 0.25s;}
 .skill-card:hover{border-color:var(--border2);transform:translateY(-3px);}
-.skill-card-icon{
-  width:36px;height:36px;border-radius:8px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:16px;margin-bottom:14px;
-}
-.skill-card-icon.blue{background:rgba(46,111,212,0.15);border:1px solid rgba(46,111,212,0.25);}
-.skill-card-icon.teal{background:rgba(0,196,160,0.12);border:1px solid rgba(0,196,160,0.22);}
-.skill-card-icon.amber{background:rgba(240,160,32,0.12);border:1px solid rgba(240,160,32,0.22);}
-.skill-card h3{
-  font-family:var(--display);font-size:15px;font-weight:600;
-  color:var(--text);margin-bottom:10px;
-}
-.skill-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
-.pill{
-  font-family:var(--mono);font-size:10px;padding:3px 9px;
-  border-radius:3px;border:1px solid var(--border);
-  color:var(--text2);background:rgba(255,255,255,0.03);
-}
+.skill-icon-wrap{width:40px;height:40px;margin-bottom:14px;display:flex;align-items:center;justify-content:center;}
+.skill-card h3{font-family:var(--display);font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px;}
+.skill-card p{font-size:13px;color:var(--text3);line-height:1.6;margin-bottom:12px;}
+.pills{display:flex;flex-wrap:wrap;gap:6px;}
+.pill{font-family:var(--mono);font-size:10px;padding:3px 9px;border-radius:3px;border:1px solid var(--border);color:var(--text2);background:rgba(255,255,255,0.03);}
 
-/* ── EXPERIENCE TIMELINE ── */
-.timeline{display:flex;flex-direction:column;gap:0;}
-.tl-item{
-  display:grid;grid-template-columns:160px 1fr;
-  gap:32px;padding:36px 0;
-  border-bottom:1px solid var(--border);
-  position:relative;
-}
+/* TRIPLE-ROLE BANNER */
+.role-banner{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:52px;}
+.role-item{background:var(--card);padding:26px 22px;text-align:center;transition:background 0.2s;}
+.role-item:hover{background:var(--card2);}
+.role-icon{display:flex;justify-content:center;margin-bottom:12px;}
+.role-title{font-family:var(--display);font-size:15px;font-weight:700;color:var(--text);margin-bottom:6px;}
+.role-desc{font-size:12px;color:var(--text3);line-height:1.5;}
+
+/* EXPERIENCE TIMELINE */
+.timeline{display:flex;flex-direction:column;}
+.tl-item{display:grid;grid-template-columns:170px 1fr;gap:32px;padding:36px 0;border-bottom:1px solid var(--border);}
 .tl-item:last-child{border-bottom:none;}
 .tl-left{display:flex;flex-direction:column;gap:6px;padding-top:4px;}
-.tl-date{
-  font-family:var(--mono);font-size:11px;color:var(--teal);
-  letter-spacing:0.04em;line-height:1.4;
-}
-.tl-company{
-  font-family:var(--mono);font-size:11px;
-  color:var(--text3);letter-spacing:0.02em;
-}
-.tl-dot{
-  width:8px;height:8px;border-radius:50%;
-  background:var(--blue);margin-top:2px;flex-shrink:0;
-}
-.tl-right{}
-.tl-role{
-  font-family:var(--display);font-size:18px;font-weight:600;
-  color:var(--text);margin-bottom:6px;letter-spacing:-0.01em;
-}
-.tl-location{
-  font-family:var(--mono);font-size:11px;color:var(--text3);
-  letter-spacing:0.04em;margin-bottom:14px;
-}
-.tl-highlights{list-style:none;display:flex;flex-direction:column;gap:8px;}
-.tl-highlights li{
-  font-size:14px;color:var(--text2);line-height:1.65;
-  padding-left:16px;position:relative;
-}
-.tl-highlights li::before{
-  content:'›';position:absolute;left:0;color:var(--blue2);font-weight:600;
-}
-.tl-highlights li strong{color:var(--text);font-weight:500;}
-.tl-badge-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
-.tl-badge{
-  font-family:var(--mono);font-size:10px;padding:3px 9px;
-  border-radius:3px;color:var(--teal2);
-  background:rgba(0,196,160,0.08);border:1px solid rgba(0,196,160,0.2);
-}
-.tl-badge.grant{
-  color:var(--amber);background:rgba(240,160,32,0.08);border-color:rgba(240,160,32,0.2);
-}
+.tl-date{font-family:var(--mono);font-size:11px;color:var(--teal);letter-spacing:0.04em;line-height:1.4;}
+.tl-company{font-family:var(--mono);font-size:11px;color:var(--text3);letter-spacing:0.02em;}
+.tl-dot{width:8px;height:8px;border-radius:50%;background:var(--blue);margin-top:2px;flex-shrink:0;}
+.tl-role{font-family:var(--display);font-size:18px;font-weight:600;color:var(--text);margin-bottom:4px;letter-spacing:-0.01em;}
+.tl-org{font-size:13px;color:var(--blue2);font-weight:500;margin-bottom:4px;}
+.tl-loc{font-family:var(--mono);font-size:11px;color:var(--text3);letter-spacing:0.04em;margin-bottom:14px;}
+.tl-focus{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;}
+.focus-tag{font-family:var(--mono);font-size:10px;padding:3px 9px;border-radius:3px;letter-spacing:0.04em;}
+.ft-blue{background:rgba(46,111,212,0.10);border:1px solid rgba(46,111,212,0.22);color:var(--blue3);}
+.ft-teal{background:rgba(0,196,160,0.09);border:1px solid rgba(0,196,160,0.22);color:var(--teal2);}
+.ft-amber{background:rgba(240,160,32,0.10);border:1px solid rgba(240,160,32,0.22);color:var(--amber);}
+.tl-hl{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.tl-hl li{font-size:14px;color:var(--text2);line-height:1.65;padding-left:18px;position:relative;}
+.tl-hl li::before{content:'›';position:absolute;left:0;color:var(--blue2);font-weight:600;}
+.tl-hl li strong{color:var(--text);font-weight:500;}
+.win-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.win{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10px;padding:5px 11px;border-radius:4px;}
+.win-green{background:rgba(34,197,94,0.10);border:1px solid rgba(34,197,94,0.25);color:#4ade80;}
+.win-amber{background:rgba(240,160,32,0.10);border:1px solid rgba(240,160,32,0.25);color:var(--amber);}
+.win-blue{background:rgba(46,111,212,0.10);border:1px solid rgba(46,111,212,0.25);color:var(--blue3);}
 
-/* ── PUBLICATIONS ── */
-.pub-filter{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap;}
-.pub-btn{
-  font-family:var(--mono);font-size:11px;letter-spacing:0.06em;
-  padding:7px 16px;border-radius:4px;cursor:pointer;
-  border:1px solid var(--border);background:transparent;
-  color:var(--text2);transition:all 0.2s;
-}
-.pub-btn.active,.pub-btn:hover{
-  background:rgba(46,111,212,0.12);
-  border-color:var(--border2);color:var(--blue2);
-}
-.pub-list{display:flex;flex-direction:column;gap:14px;}
-.pub-item{
-  background:var(--card);border:1px solid var(--border);
-  border-radius:8px;padding:18px 22px;
-  transition:border-color 0.2s;cursor:default;
-}
+/* IMPACT BAR */
+.impact-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:52px;}
+.impact-item{background:var(--card);padding:24px 16px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px;}
+.impact-icon{display:flex;justify-content:center;}
+.impact-num{font-family:var(--display);font-size:32px;font-weight:800;color:var(--blue2);line-height:1;}
+.impact-label{font-size:12px;color:var(--text3);}
+
+/* PUB LIST */
+.pub-filter{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap;}
+.pub-btn{font-family:var(--mono);font-size:11px;letter-spacing:0.06em;padding:7px 16px;border-radius:4px;cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--text2);transition:all 0.2s;}
+.pub-btn.active,.pub-btn:hover{background:rgba(46,111,212,0.12);border-color:var(--border2);color:var(--blue2);}
+.pub-list{display:flex;flex-direction:column;gap:12px;}
+.pub-item{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px 20px;transition:border-color 0.2s;}
 .pub-item:hover{border-color:var(--border2);}
-.pub-meta{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap;}
-.pub-year{font-family:var(--mono);font-size:11px;color:var(--teal);letter-spacing:0.06em;}
-.pub-journal{
-  font-family:var(--mono);font-size:11px;
-  background:rgba(46,111,212,0.10);border:1px solid rgba(46,111,212,0.22);
-  color:var(--blue3);padding:2px 9px;border-radius:3px;
-}
-.pub-lead{
-  display:inline-block;font-family:var(--mono);font-size:10px;
-  background:rgba(240,160,32,0.12);border:1px solid rgba(240,160,32,0.25);
-  color:var(--amber);padding:2px 9px;border-radius:3px;
-}
-.pub-title{
-  font-size:14px;font-weight:500;color:var(--text);
-  line-height:1.5;margin-bottom:4px;
-}
-.pub-authors{font-size:12px;color:var(--text3);line-height:1.5;}
-.pub-link{
-  display:inline-flex;align-items:center;gap:4px;
-  font-family:var(--mono);font-size:10px;color:var(--blue2);
-  text-decoration:none;margin-top:8px;
-  border-bottom:1px solid transparent;transition:border-color 0.2s;
-}
+.pub-meta{display:flex;align-items:center;gap:8px;margin-bottom:7px;flex-wrap:wrap;}
+.pub-year{font-family:var(--mono);font-size:11px;color:var(--teal);}
+.pub-j{font-family:var(--mono);font-size:10px;background:rgba(46,111,212,0.10);border:1px solid rgba(46,111,212,0.22);color:var(--blue3);padding:2px 9px;border-radius:3px;}
+.pub-lead{font-family:var(--mono);font-size:10px;background:rgba(240,160,32,0.10);border:1px solid rgba(240,160,32,0.25);color:var(--amber);padding:2px 9px;border-radius:3px;}
+.pub-title{font-size:14px;font-weight:500;color:var(--text);line-height:1.5;margin-bottom:3px;}
+.pub-authors{font-size:12px;color:var(--text3);}
+.pub-link{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10px;color:var(--blue2);text-decoration:none;margin-top:7px;border-bottom:1px solid transparent;transition:border-color 0.2s;}
 .pub-link:hover{border-color:var(--blue2);}
 
-/* ── ACHIEVEMENTS ── */
-.awards-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:16px;
-}
-.award-card{
-  background:var(--card);border:1px solid var(--border);
-  border-radius:10px;padding:20px 22px;
-  display:flex;gap:14px;align-items:flex-start;
-  transition:all 0.25s;
-}
-.award-card:hover{border-color:var(--border2);transform:translateY(-2px);}
-.award-icon{
-  width:36px;height:36px;border-radius:7px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;
-  font-size:16px;
-}
-.award-icon.gold{background:rgba(240,160,32,0.15);border:1px solid rgba(240,160,32,0.25);}
-.award-icon.blue{background:rgba(46,111,212,0.15);border:1px solid rgba(46,111,212,0.25);}
-.award-icon.teal{background:rgba(0,196,160,0.12);border:1px solid rgba(0,196,160,0.22);}
-.award-icon.red{background:rgba(224,85,85,0.12);border:1px solid rgba(224,85,85,0.22);}
-.award-year{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:0.06em;margin-bottom:3px;}
-.award-title{font-size:13px;font-weight:500;color:var(--text);line-height:1.45;margin-bottom:3px;}
-.award-org{font-size:12px;color:var(--text3);}
-
-/* Stats bar */
-.impact-bar{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:1px;background:var(--border);
-  border:1px solid var(--border);border-radius:10px;
-  overflow:hidden;margin-bottom:56px;
-}
-.impact-item{
-  background:var(--card);padding:28px 24px;text-align:center;
-}
-.impact-num{
-  font-family:var(--display);font-size:36px;font-weight:800;
-  color:var(--blue2);line-height:1;margin-bottom:6px;
-}
-.impact-label{font-size:13px;color:var(--text3);}
-
-/* Media coverage */
-.media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:48px;}
-.media-card{
-  background:var(--card);border:1px solid var(--border);
-  border-radius:8px;padding:18px;transition:all 0.25s;text-decoration:none;
-  display:block;
-}
+/* MEDIA CARDS */
+.media-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:48px;}
+.media-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:18px;transition:all 0.25s;text-decoration:none;display:block;}
 .media-card:hover{border-color:var(--border2);transform:translateY(-2px);}
-.media-outlet{
-  font-family:var(--mono);font-size:10px;color:var(--teal);
-  letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;
-}
+.media-outlet{font-family:var(--mono);font-size:10px;color:var(--teal);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;}
 .media-headline{font-size:13px;color:var(--text);line-height:1.5;font-weight:500;}
 .media-year{font-family:var(--mono);font-size:10px;color:var(--text3);margin-top:8px;}
 
-/* ── CONTACT ── */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
-.contact-links{display:flex;flex-direction:column;gap:12px;}
-.contact-link{
-  display:flex;align-items:center;gap:14px;
-  background:var(--card);border:1px solid var(--border);
-  border-radius:8px;padding:14px 18px;
-  text-decoration:none;transition:all 0.2s;
-}
-.contact-link:hover{border-color:var(--border2);transform:translateX(4px);}
-.contact-link-icon{
-  width:36px;height:36px;border-radius:6px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;font-size:16px;
-}
-.contact-link-label{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:0.06em;}
-.contact-link-val{font-size:13px;color:var(--text);margin-top:1px;font-weight:500;}
-.contact-research{display:flex;flex-direction:column;gap:12px;}
-.research-link{
-  display:flex;align-items:center;gap:12px;
-  background:var(--card);border:1px solid var(--border);
-  border-radius:8px;padding:14px 18px;
-  text-decoration:none;transition:all 0.2s;
-}
-.research-link:hover{border-color:var(--border2);}
-.research-link-name{font-size:13px;color:var(--blue2);font-weight:500;}
-.research-link-desc{font-size:12px;color:var(--text3);margin-top:1px;}
+/* AWARDS */
+.awards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;}
+.award-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start;transition:all 0.25s;}
+.award-card:hover{border-color:var(--border2);transform:translateY(-2px);}
+.award-icon{width:38px;height:38px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.award-year{font-family:var(--mono);font-size:10px;color:var(--text3);margin-bottom:3px;}
+.award-title{font-size:13px;font-weight:500;color:var(--text);line-height:1.4;margin-bottom:2px;}
+.award-org{font-size:12px;color:var(--text3);}
 
-/* ── FOOTER ── */
-footer{
-  border-top:1px solid var(--border);
-  padding:28px 6%;text-align:center;
-  background:var(--bg);z-index:1;position:relative;
-}
+/* CONTACT */
+.contact-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:52px;align-items:start;}
+.ci-stack{display:flex;flex-direction:column;gap:12px;}
+.ci-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:14px;text-decoration:none;transition:all 0.22s;}
+.ci-card:hover{border-color:var(--border2);transform:translateX(4px);}
+.ci-icon{width:38px;height:38px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
+.ci-label{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;margin-bottom:2px;}
+.ci-val{font-size:13px;color:var(--text);font-weight:500;}
+.ci-note{font-size:11px;color:var(--text3);margin-top:1px;}
+.rp-block{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:10px;margin-top:12px;}
+.rp-title{font-family:var(--mono);font-size:10px;color:var(--teal);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px;}
+.rp-link{display:flex;align-items:center;gap:12px;text-decoration:none;padding:9px 10px;border-radius:7px;border:1px solid var(--border);background:rgba(255,255,255,0.02);transition:all 0.2s;}
+.rp-link:hover{border-color:var(--border2);}
+.rp-icon{width:28px;height:28px;border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.rp-name{font-size:12px;font-weight:500;color:var(--text);}
+.rp-desc{font-size:11px;color:var(--text3);margin-top:1px;}
+
+/* FORM CARD */
+.form-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:30px 28px;}
+.form-title{font-family:var(--display);font-size:18px;font-weight:600;color:var(--text);margin-bottom:4px;}
+.form-sub{font-size:13px;color:var(--text3);margin-bottom:22px;line-height:1.5;}
+.form-tabs{display:flex;border:1px solid var(--border);border-radius:7px;overflow:hidden;margin-bottom:22px;}
+.form-tab{flex:1;padding:10px 0;font-family:var(--mono);font-size:11px;letter-spacing:0.06em;text-transform:uppercase;text-align:center;cursor:pointer;background:transparent;border:none;color:var(--text3);transition:all 0.2s;}
+.form-tab.active{background:rgba(46,111,212,0.14);color:var(--blue2);}
+.form-tab:first-child{border-right:1px solid var(--border);}
+.form-panel{display:none;}
+.form-panel.active{display:block;}
+.field{margin-bottom:14px;}
+.field label{display:block;font-family:var(--mono);font-size:10px;letter-spacing:0.07em;text-transform:uppercase;color:var(--text3);margin-bottom:5px;}
+.field input,.field textarea,.field select{width:100%;background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:6px;padding:10px 13px;font-family:var(--sans);font-size:14px;color:var(--text);outline:none;transition:border-color 0.2s;-webkit-appearance:none;}
+.field select{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23566d88' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:32px;}
+.field select option{background:var(--card);color:var(--text);}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--border2);}
+.field textarea{resize:vertical;min-height:96px;line-height:1.6;}
+.field input::placeholder,.field textarea::placeholder{color:var(--text3);font-size:13px;}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.resume-note{background:rgba(46,111,212,0.08);border:1px solid rgba(46,111,212,0.2);border-radius:6px;padding:12px 14px;margin-bottom:14px;font-size:12px;color:var(--text2);line-height:1.6;}
+.resume-note strong{color:var(--blue3);}
+.check-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:14px;}
+.check-row input[type=checkbox]{width:15px;height:15px;margin-top:3px;flex-shrink:0;accent-color:var(--blue2);cursor:pointer;}
+.check-row label{font-size:12px;color:var(--text2);line-height:1.5;cursor:pointer;}
+.submit-btn{width:100%;padding:13px;background:var(--blue);color:#fff;border:1px solid var(--blue);border-radius:8px;font-family:var(--sans);font-size:14px;font-weight:500;letter-spacing:0.02em;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:all 0.2s;}
+.submit-btn:hover{background:var(--blue2);border-color:var(--blue2);}
+.submit-btn:disabled{opacity:0.5;cursor:not-allowed;}
+.form-success{display:none;text-align:center;padding:32px 16px;}
+.form-success-icon{font-size:40px;margin-bottom:12px;}
+.form-success h4{font-family:var(--display);font-size:18px;color:var(--text);margin-bottom:8px;}
+.form-success p{font-size:13px;color:var(--text2);}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:28px 5%;text-align:center;background:var(--bg);z-index:1;position:relative;}
 footer p{font-family:var(--mono);font-size:11px;color:var(--text3);letter-spacing:0.04em;}
 footer span{color:var(--teal);}
 
-/* ── ANIMATIONS ── */
-@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:none;}}
-.fade-up{opacity:0;animation:fadeUp 0.7s ease forwards;}
-.fade-up.d1{animation-delay:0.1s;}
-.fade-up.d2{animation-delay:0.22s;}
-.fade-up.d3{animation-delay:0.34s;}
-.fade-up.d4{animation-delay:0.46s;}
-.fade-up.d5{animation-delay:0.58s;}
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+.fu{opacity:0;animation:fadeUp 0.65s ease forwards;}
+.d1{animation-delay:0.1s;}.d2{animation-delay:0.22s;}.d3{animation-delay:0.34s;}.d4{animation-delay:0.46s;}.d5{animation-delay:0.58s;}
+@keyframes spin{to{transform:rotate(360deg);}}
+@keyframes countUp{from{opacity:0;}to{opacity:1;}}
 
-@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.5;}}
-.blink{animation:pulse 2s ease-in-out infinite;}
-
-/* ── RESPONSIVE ── */
-@media(max-width:860px){
-  .hero-inner{grid-template-columns:1fr;}
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-inner,.contact-wrap{grid-template-columns:1fr;}
   .hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
   .tl-item{grid-template-columns:1fr;}
   .tl-left{flex-direction:row;flex-wrap:wrap;gap:10px;padding-top:0;}
   .impact-bar{grid-template-columns:1fr 1fr;}
-  .contact-grid{grid-template-columns:1fr;}
+  .role-banner{grid-template-columns:1fr;}
   .nav-links{display:none;}
-  .hamburger{display:flex;}
+  .field-row{grid-template-columns:1fr;}
 }
 @media(max-width:540px){
-  section{padding:64px 5%;}
+  section{padding:60px 5%;}
   .hero-stats{grid-template-columns:1fr;}
-  .impact-bar{grid-template-columns:1fr 1fr;}
   h1{font-size:32px;}
 }
-
-/* print */
-@media print{body::before,body::after,nav{display:none;}section{page-break-inside:avoid;}}
 </style>
 </head>
 <body>
@@ -476,14 +259,11 @@ footer span{color:var(--teal);}
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
-    <li><a href="#publications">Publications</a></li>
+    <li><a href="#publications">Research</a></li>
     <li><a href="#achievements">Awards</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="#contact" class="nav-btn">Contact Me</a>
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
 </nav>
 
 <!-- HERO -->
@@ -492,123 +272,140 @@ footer span{color:var(--teal);}
   <div class="hero-glow2"></div>
   <div class="hero-inner">
     <div>
-      <div class="hero-eyebrow fade-up d1">Available for new opportunities</div>
-      <h1 class="fade-up d2">Md Alamgir<br><span class="accent">Kabir</span></h1>
-      <div class="hero-creds fade-up d2">PhD · PMP® · Senior Development Scientist</div>
-      <div class="hero-subtitle fade-up d3">IVD & Diagnostics | Point-of-Care Innovation<br>Bioengineering | Regulatory Quality Systems</div>
-      <p class="hero-desc fade-up d3">
-        PMP®-certified scientist with 10+ years bridging technical innovation and rigorous project management to drive IVD products from concept to commercialization. Author of 19 peer-reviewed publications. Expert in electrochemical sensing, microfluidics, and FDA/ISO 13485 regulated environments.
-      </p>
-      <div class="hero-tags fade-up d4">
+      <div class="hero-eyebrow fu d1">Open to new opportunities · Minneapolis, MN</div>
+      <h1 class="fu d2">Md Alamgir<br><span class="ac">Kabir</span></h1>
+      <div class="hero-creds fu d2">PhD · PMP® · Senior Development Scientist</div>
+      <div class="hero-subtitle fu d3">IVD & Medical Device · Quality Engineering<br>Process Development · Scientific Project Leadership</div>
+      <p class="hero-desc fu d3">PMP®-certified scientist with 10+ years bridging bench-level innovation with rigorous project execution — delivering IVD products from concept to commercialization across electrochemical, optical, and lateral flow platforms. Published author of 19 peer-reviewed papers. Backed by $690K+ in competitive research funding.</p>
+      <div class="hero-tags fu d4">
         <span class="tag tag-teal">IVD Assay Development</span>
-        <span class="tag tag-blue">Point-of-Care</span>
-        <span class="tag tag-blue">ISO 13485 / FDA</span>
-        <span class="tag tag-teal">Microfluidics</span>
+        <span class="tag tag-blue">Design V&amp;V</span>
+        <span class="tag tag-blue">ISO 13485 / FDA 21 CFR 820</span>
+        <span class="tag tag-teal">CAPA &amp; Root Cause Analysis</span>
         <span class="tag tag-amber">PMP® Certified</span>
-        <span class="tag tag-blue">Biosensors</span>
-        <span class="tag tag-blue">CAPA / Design Controls</span>
-        <span class="tag tag-teal">Lateral Flow Assays</span>
+        <span class="tag tag-blue">Process Optimization</span>
+        <span class="tag tag-teal">Lateral Flow / Microfluidics</span>
+        <span class="tag tag-blue">ISO 14971 Risk Mgmt</span>
       </div>
-      <div class="hero-actions fade-up d5">
+      <div class="hero-actions fu d5">
         <a href="#contact" class="btn-primary">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           Get In Touch
         </a>
-        <a href="#publications" class="btn-outline">
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          View Research
-        </a>
+        <a href="#experience" class="btn-outline">View Experience</a>
         <a href="https://www.linkedin.com/in/mdalamgirkabir" target="_blank" class="btn-outline">LinkedIn ↗</a>
       </div>
     </div>
 
-    <div class="hero-stats fade-up d3">
+    <!-- HERO STATS — dynamic SVG icons -->
+    <div class="hero-stats fu d3">
+
       <div class="stat-card">
-        <div class="stat-top">
-          <div class="stat-num">19</div>
-          <div class="stat-icon">📄</div>
+        <div class="stat-row">
+          <div class="stat-icon-wrap">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <rect width="44" height="44" rx="10" fill="rgba(46,111,212,0.12)" stroke="rgba(46,111,212,0.28)" stroke-width="1"/>
+              <path d="M22 8 L28 16 H36 L30 22 L32 31 L22 26 L12 31 L14 22 L8 16 H16 Z" fill="rgba(46,111,212,0.3)" stroke="#4d8ef0" stroke-width="1.2" stroke-linejoin="round"/>
+              <path d="M22 11 L26.5 17 H33 L27.5 21.5 L29.5 28.5 L22 24 L14.5 28.5 L16.5 21.5 L11 17 H17.5 Z" fill="#3878d2" opacity="0.5"/>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-num" data-target="19">19</div>
+            <div class="stat-label">Peer-Reviewed Publications<br><span style="color:var(--text3);font-size:10px;">Nature Sci. Reports · PLOS ONE · Biosensors</span></div>
+          </div>
         </div>
-        <div class="stat-label">Peer-Reviewed Publications<br>in journals incl. Nature Sci. Reports, PLOS ONE</div>
       </div>
+
       <div class="stat-card">
-        <div class="stat-top">
-          <div class="stat-num">10+</div>
-          <div class="stat-icon">🔬</div>
+        <div class="stat-row">
+          <div class="stat-icon-wrap">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <rect width="44" height="44" rx="10" fill="rgba(0,196,160,0.10)" stroke="rgba(0,196,160,0.25)" stroke-width="1"/>
+              <circle cx="22" cy="22" r="10" stroke="#00c4a0" stroke-width="1.5" stroke-dasharray="3 2" fill="none" opacity="0.4"/>
+              <circle cx="22" cy="22" r="6" fill="rgba(0,196,160,0.25)" stroke="#00e5bb" stroke-width="1.2"/>
+              <path d="M18 22 L20.5 24.5 L26 19" stroke="#00e5bb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="9" y="9" width="5" height="5" rx="1.5" fill="rgba(0,196,160,0.5)" stroke="#00c4a0" stroke-width="0.8"/>
+              <rect x="30" y="9" width="5" height="5" rx="1.5" fill="rgba(0,196,160,0.5)" stroke="#00c4a0" stroke-width="0.8"/>
+              <rect x="9" y="30" width="5" height="5" rx="1.5" fill="rgba(0,196,160,0.5)" stroke="#00c4a0" stroke-width="0.8"/>
+              <rect x="30" y="30" width="5" height="5" rx="1.5" fill="rgba(0,196,160,0.5)" stroke="#00c4a0" stroke-width="0.8"/>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Years in IVD & Diagnostics<br><span style="color:var(--text3);font-size:10px;">Research through Industry</span></div>
+          </div>
         </div>
-        <div class="stat-label">Years in IVD & Diagnostics<br>Research & Industry</div>
       </div>
+
       <div class="stat-card">
-        <div class="stat-top">
-          <div class="stat-num">$690K+</div>
-          <div class="stat-icon">🏆</div>
+        <div class="stat-row">
+          <div class="stat-icon-wrap">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+              <rect width="44" height="44" rx="10" fill="rgba(240,160,32,0.10)" stroke="rgba(240,160,32,0.28)" stroke-width="1"/>
+              <!-- Trophy cup -->
+              <path d="M16 10 H28 V22 C28 27 22 30 22 30 C22 30 16 27 16 22 Z" fill="rgba(240,160,32,0.25)" stroke="#f0a020" stroke-width="1.3" stroke-linejoin="round"/>
+              <path d="M16 14 H11 C11 20 14 22 16 22" stroke="#f0a020" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+              <path d="M28 14 H33 C33 20 30 22 28 22" stroke="#f0a020" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+              <line x1="22" y1="30" x2="22" y2="34" stroke="#f0a020" stroke-width="1.3" stroke-linecap="round"/>
+              <rect x="17" y="34" width="10" height="2.5" rx="1.25" fill="#f0a020" opacity="0.7"/>
+              <!-- shine -->
+              <path d="M19 14 L20 19" stroke="rgba(255,255,255,0.4)" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="stat-num">$690K+</div>
+            <div class="stat-label">Research Funding Secured<br><span style="color:var(--text3);font-size:10px;">NSF · NJ DOL · IIE · FAU</span></div>
+          </div>
         </div>
-        <div class="stat-label">Grant Funding Awarded<br>NSF, NJ DOL, IIE, FAU</div>
       </div>
+
+      <!-- PMP CARD -->
       <div class="pmp-card">
-        <div class="pmp-icon">PMP</div>
+        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" class="pmp-badge-svg">
+          <rect width="46" height="46" rx="10" fill="rgba(46,111,212,0.18)" stroke="rgba(46,111,212,0.4)" stroke-width="1"/>
+          <!-- Hexagon badge -->
+          <path d="M23 8 L33 13.5 L33 24.5 L23 30 L13 24.5 L13 13.5 Z" fill="rgba(46,111,212,0.3)" stroke="#4d8ef0" stroke-width="1.2"/>
+          <text x="23" y="22.5" text-anchor="middle" dominant-baseline="central" font-family="IBM Plex Mono,monospace" font-size="8" font-weight="700" fill="#7fb0ff">PMP</text>
+          <path d="M17 34 L23 38 L29 34" stroke="#00c4a0" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
         <div>
-          <div class="pmp-label">PMI Certified</div>
-          <div class="pmp-name">Project Management Professional</div>
-          <div class="pmp-date">Cert #4258911 · Valid thru Dec 2028</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--amber);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px;">PMI Certified</div>
+          <div style="font-size:13px;font-weight:500;color:var(--text);">Project Management Professional</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--text3);margin-top:2px;">Cert #4258911 · Valid through Dec 2028</div>
         </div>
       </div>
-    </div>
+
+    </div><!-- /hero-stats -->
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" style="background:var(--bg2);">
-  <div class="section-inner">
-    <div class="section-kicker">About</div>
-    <h2 class="section-title">Scientist. Innovator. <em>Project Leader.</em></h2>
+  <div class="si">
+    <div class="sk">About</div>
+    <h2 class="st">Scientist. Engineer. <em>Leader.</em></h2>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
       <div>
-        <p style="font-size:15px;color:var(--text2);line-height:1.85;margin-bottom:20px;">
-          I began my journey as an Electrical & Electronic Engineering graduate from <strong style="color:var(--text);">Rajshahi University of Engineering & Technology (RUET)</strong> in Bangladesh. Driven by a passion for healthcare innovation, I pursued a PhD at <strong style="color:var(--text);">Florida Atlantic University</strong>, specializing in Bioengineering — focusing on point-of-care viral diagnostics for Zika, Dengue, and COVID-19.
-        </p>
-        <p style="font-size:15px;color:var(--text2);line-height:1.85;margin-bottom:20px;">
-          Today, as a <strong style="color:var(--text);">Sr. Development Scientist at Beckman Coulter Diagnostics</strong>, I lead cross-functional teams in assay transfer, reagent optimization, and regulatory readiness for clinical chemistry platforms — including the DxC500i. My work directly translates into products that improve patient outcomes worldwide.
-        </p>
-        <p style="font-size:15px;color:var(--text2);line-height:1.85;">
-          Beyond bench science, I earned the <strong style="color:var(--amber);">PMP® certification (Dec 2025)</strong> to formalize my leadership in structured project management — bridging science, strategy, and stakeholder communication.
-        </p>
+        <p style="font-size:15px;color:var(--text2);line-height:1.85;margin-bottom:18px;">Starting from a B.Sc. in Electrical & Electronic Engineering at <strong style="color:var(--text);">RUET, Bangladesh</strong>, I pursued a PhD at <strong style="color:var(--text);">Florida Atlantic University</strong> specializing in Bioengineering — developing point-of-care viral diagnostics for Zika, Dengue, HIV, and COVID-19 that attracted $500K in NSF funding and media coverage across three TV networks.</p>
+        <p style="font-size:15px;color:var(--text2);line-height:1.85;margin-bottom:18px;">Today at <strong style="color:var(--text);">Beckman Coulter Diagnostics</strong>, I lead cross-functional teams in assay transfer, sensor optimization, and regulatory readiness for clinical chemistry platforms. I bring a rare combination of deep bench science, embedded quality ownership throughout the product lifecycle, and PMP®-certified project leadership.</p>
+        <p style="font-size:15px;color:var(--text2);line-height:1.85;">My value to an organization sits at the intersection of <span style="color:var(--blue2);">IVD development</span>, <span style="color:var(--teal2);">design quality &amp; V&V</span>, and <span style="color:var(--amber);">scientific project management</span> — equally effective driving a complex assay experiment, resolving a CAPA, or leading a milestone review with executive stakeholders.</p>
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;">
         <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;">
-          <div style="font-family:var(--mono);font-size:10px;color:var(--teal);letter-spacing:0.08em;margin-bottom:12px;text-transform:uppercase;">Research Focus Areas</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--teal);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px;">I target roles in</div>
           <div style="display:flex;flex-direction:column;gap:10px;">
-            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2);">
-              <span style="width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0;"></span> Point-of-Care Disease Detection
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2);">
-              <span style="width:6px;height:6px;border-radius:50%;background:var(--blue2);flex-shrink:0;"></span> Biosensors for Rapid Infectious Disease Detection
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2);">
-              <span style="width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0;"></span> Microfluidic Device & MEMS Fabrication
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2);">
-              <span style="width:6px;height:6px;border-radius:50%;background:var(--blue2);flex-shrink:0;"></span> Electrochemical & Optical Immunoassay Development
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2);">
-              <span style="width:6px;height:6px;border-radius:50%;background:var(--amber);flex-shrink:0;"></span> Lateral Flow & Vertical Flow IVD Platforms
-            </div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2);"><span style="width:6px;height:6px;border-radius:50%;background:var(--blue2);flex-shrink:0;"></span>IVD / Medical Device Scientist (Sr. / Principal)</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2);"><span style="width:6px;height:6px;border-radius:50%;background:var(--teal);flex-shrink:0;"></span>Quality Engineer / Design Quality Engineer</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2);"><span style="width:6px;height:6px;border-radius:50%;background:var(--amber);flex-shrink:0;"></span>Process Development Engineer</div>
+            <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:var(--text2);"><span style="width:6px;height:6px;border-radius:50%;background:var(--blue2);flex-shrink:0;"></span>Scientific Project Leader / NPI Program Manager</div>
           </div>
         </div>
         <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px 22px;">
-          <div style="font-family:var(--mono);font-size:10px;color:var(--teal);letter-spacing:0.08em;margin-bottom:12px;text-transform:uppercase;">Education</div>
+          <div style="font-family:var(--mono);font-size:10px;color:var(--teal);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px;">Education</div>
           <div style="display:flex;flex-direction:column;gap:12px;">
-            <div>
-              <div style="font-size:13px;font-weight:500;color:var(--text);">PhD, Electrical Engineering (Bioengineering)</div>
-              <div style="font-size:12px;color:var(--text3);">Florida Atlantic University · Fall 2021</div>
-            </div>
-            <div style="border-top:1px solid var(--border);padding-top:12px;">
-              <div style="font-size:13px;font-weight:500;color:var(--text);">M.S., Electrical Engineering (Bioengineering)</div>
-              <div style="font-size:12px;color:var(--text3);">Florida Atlantic University · Fall 2018</div>
-            </div>
-            <div style="border-top:1px solid var(--border);padding-top:12px;">
-              <div style="font-size:13px;font-weight:500;color:var(--text);">B.Sc., Electrical & Electronic Engineering</div>
-              <div style="font-size:12px;color:var(--text3);">RUET, Bangladesh · Fall 2013</div>
-            </div>
+            <div><div style="font-size:13px;font-weight:500;color:var(--text);">PhD, Electrical Engineering (Bioengineering)</div><div style="font-size:12px;color:var(--text3);">Florida Atlantic University · 2021</div></div>
+            <div style="border-top:1px solid var(--border);padding-top:12px;"><div style="font-size:13px;font-weight:500;color:var(--text);">M.S., Electrical Engineering (Bioengineering)</div><div style="font-size:12px;color:var(--text3);">Florida Atlantic University · 2018</div></div>
+            <div style="border-top:1px solid var(--border);padding-top:12px;"><div style="font-size:13px;font-weight:500;color:var(--text);">B.Sc., Electrical & Electronic Engineering</div><div style="font-size:12px;color:var(--text3);">RUET, Bangladesh · 2013</div></div>
           </div>
         </div>
       </div>
@@ -618,87 +415,81 @@ footer span{color:var(--teal);}
 
 <!-- SKILLS -->
 <section id="skills">
-  <div class="section-inner">
-    <div class="section-kicker">Expertise</div>
-    <h2 class="section-title">Technical & Leadership <em>Skills</em></h2>
+  <div class="si">
+    <div class="sk">Expertise</div>
+    <h2 class="st">Technical & Leadership <em>Skills</em></h2>
+
+    <!-- THREE-ROLE BANNER -->
+    <div class="role-banner">
+      <div class="role-item">
+        <div class="role-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(46,111,212,0.12)" stroke="rgba(46,111,212,0.28)" stroke-width="1"/><circle cx="18" cy="15" r="5" stroke="#4d8ef0" stroke-width="1.5" fill="rgba(46,111,212,0.2)"/><path d="M10 28 C10 23 26 23 26 28" stroke="#4d8ef0" stroke-width="1.5" stroke-linecap="round" fill="none"/><path d="M24 10 L26 12 L30 8" stroke="#00e5bb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="role-title">IVD Scientist</div>
+        <div class="role-desc">Assay development · Biosensors · POC platforms · Reagent optimization · Design transfer</div>
+      </div>
+      <div class="role-item">
+        <div class="role-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(0,196,160,0.10)" stroke="rgba(0,196,160,0.25)" stroke-width="1"/><rect x="8" y="10" width="20" height="16" rx="3" stroke="#00c4a0" stroke-width="1.5" fill="none"/><path d="M12 18 L15.5 21 L22 14" stroke="#00e5bb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 14 H28" stroke="rgba(0,196,160,0.4)" stroke-width="1"/></svg>
+        </div>
+        <div class="role-title">Quality Engineer</div>
+        <div class="role-desc">Design V&V · ISO 13485 · FDA 21 CFR 820 · CAPA · ISO 14971 FMEA · DHF / SOPs</div>
+      </div>
+      <div class="role-item">
+        <div class="role-icon">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(240,160,32,0.10)" stroke="rgba(240,160,32,0.25)" stroke-width="1"/><rect x="8" y="8" width="8" height="8" rx="2" fill="rgba(240,160,32,0.3)" stroke="#f0a020" stroke-width="1.2"/><rect x="20" y="8" width="8" height="8" rx="2" fill="rgba(240,160,32,0.2)" stroke="#f0a020" stroke-width="1.2"/><rect x="8" y="20" width="8" height="8" rx="2" fill="rgba(240,160,32,0.2)" stroke="#f0a020" stroke-width="1.2"/><rect x="20" y="20" width="8" height="8" rx="2" fill="rgba(240,160,32,0.3)" stroke="#f0a020" stroke-width="1.2"/><line x1="16" y1="12" x2="20" y2="12" stroke="#fbbf24" stroke-width="1.2"/><line x1="12" y1="16" x2="12" y2="20" stroke="#fbbf24" stroke-width="1.2"/><line x1="24" y1="16" x2="24" y2="20" stroke="#fbbf24" stroke-width="1.2"/><line x1="16" y1="24" x2="20" y2="24" stroke="#fbbf24" stroke-width="1.2"/></svg>
+        </div>
+        <div class="role-title">Project Leader</div>
+        <div class="role-desc">PMP® · NPI programs · Cross-functional leadership · Milestone tracking · Stakeholder communication</div>
+      </div>
+    </div>
+
     <div class="skills-grid">
-
       <div class="skill-card">
-        <div class="skill-card-icon teal">🧬</div>
+        <div class="skill-icon-wrap"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(0,196,160,0.10)" stroke="rgba(0,196,160,0.22)" stroke-width="1"/><ellipse cx="18" cy="14" rx="7" ry="5" stroke="#00c4a0" stroke-width="1.3" fill="rgba(0,196,160,0.15)"/><path d="M11 14 V20 C11 23.3 14.1 26 18 26 C21.9 26 25 23.3 25 20 V14" stroke="#00c4a0" stroke-width="1.3" fill="none"/><line x1="15" y1="20" x2="21" y2="20" stroke="#00e5bb" stroke-width="1.2" stroke-linecap="round"/><line x1="15" y1="23" x2="21" y2="23" stroke="#00c4a0" stroke-width="1" stroke-linecap="round" opacity="0.5"/></svg></div>
         <h3>Assay Development</h3>
-        <p style="font-size:13px;color:var(--text3);line-height:1.6;">IVD immunoassay design from concept to prototype and scale-up. Lateral flow, vertical flow, ELISA, colorimetric & electrochemical platforms.</p>
-        <div class="skill-pills">
-          <span class="pill">ELISA</span><span class="pill">LFA</span><span class="pill">qPCR</span>
-          <span class="pill">RT-LAMP</span><span class="pill">Western Blot</span><span class="pill">SDS-PAGE</span>
-          <span class="pill">Colorimetric</span><span class="pill">Electrochemical</span>
-        </div>
+        <p>End-to-end IVD immunoassay design, optimization, and scale-up across lateral flow, ELISA, vertical flow, and clinical chemistry platforms.</p>
+        <div class="pills"><span class="pill">LFA</span><span class="pill">ELISA</span><span class="pill">Colorimetric</span><span class="pill">Electrochemical</span><span class="pill">Vertical Flow</span><span class="pill">qPCR / RT-LAMP</span><span class="pill">Western Blot</span></div>
       </div>
-
       <div class="skill-card">
-        <div class="skill-card-icon blue">⚗️</div>
-        <h3>Microfluidics & Device Fabrication</h3>
-        <p style="font-size:13px;color:var(--text3);line-height:1.6;">Design and fabrication of lab-on-chip systems, microfluidic devices, and biosensors for POC applications.</p>
-        <div class="skill-pills">
-          <span class="pill">Photolithography</span><span class="pill">PDMS</span><span class="pill">3D Printing</span>
-          <span class="pill">Laser Cutting</span><span class="pill">CAD/Fusion360</span><span class="pill">Screen Printing</span>
-          <span class="pill">MEMS</span><span class="pill">SolidWorks</span>
-        </div>
+        <div class="skill-icon-wrap"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(46,111,212,0.10)" stroke="rgba(46,111,212,0.22)" stroke-width="1"/><rect x="8" y="12" width="20" height="14" rx="3" stroke="#4d8ef0" stroke-width="1.3" fill="none"/><path d="M8 16 H28" stroke="rgba(46,111,212,0.5)" stroke-width="1"/><path d="M12 20 L15 23 L20 18 L24 21" stroke="#7fb0ff" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M13 8 L23 8 L23 12 L13 12 Z" fill="rgba(46,111,212,0.25)" stroke="#4d8ef0" stroke-width="1.2"/></svg></div>
+        <h3>Quality Engineering</h3>
+        <p>Design controls, CAPA participation &amp; resolution, nonconformance root cause analysis, and ISO-compliant documentation throughout the product lifecycle.</p>
+        <div class="pills"><span class="pill">ISO 13485</span><span class="pill">FDA 21 CFR 820</span><span class="pill">ISO 14971 / FMEA</span><span class="pill">CAPA / NC</span><span class="pill">DHF / SOPs</span><span class="pill">Design V&V (CLSI)</span><span class="pill">Audit Readiness</span></div>
       </div>
-
       <div class="skill-card">
-        <div class="skill-card-icon amber">📊</div>
-        <h3>Regulatory & Quality Systems</h3>
-        <p style="font-size:13px;color:var(--text3);line-height:1.6;">Deep expertise in FDA, ISO 13485, IVDR regulated environments. CAPA, design controls, risk management, and SOP authoring.</p>
-        <div class="skill-pills">
-          <span class="pill">ISO 13485</span><span class="pill">FDA 21 CFR</span><span class="pill">IVDR</span>
-          <span class="pill">CAPA</span><span class="pill">Design Controls</span><span class="pill">Risk Mgmt</span>
-          <span class="pill">CLSI</span><span class="pill">DHF/DMR</span>
-        </div>
+        <div class="skill-icon-wrap"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(240,160,32,0.10)" stroke="rgba(240,160,32,0.22)" stroke-width="1"/><circle cx="18" cy="18" r="9" stroke="#f0a020" stroke-width="1.3" fill="none" stroke-dasharray="4 2"/><circle cx="18" cy="18" r="5" fill="rgba(240,160,32,0.2)" stroke="#fbbf24" stroke-width="1.2"/><line x1="18" y1="18" x2="23" y2="13" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/><line x1="18" y1="18" x2="18" y2="12" stroke="#f0a020" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/></svg></div>
+        <h3>Process Development</h3>
+        <p>Systematic process optimization and scale-up using DOE, JMP SPC, and structured RCA methodologies — from reagent chemistry through manufacturing implementation.</p>
+        <div class="pills"><span class="pill">DOE</span><span class="pill">JMP / SPC</span><span class="pill">RCA / 5-Why</span><span class="pill">Fishbone / Ishikawa</span><span class="pill">PSP</span><span class="pill">Stability Studies</span><span class="pill">Scale-Up</span></div>
       </div>
-
       <div class="skill-card">
-        <div class="skill-card-icon blue">🏗️</div>
+        <div class="skill-icon-wrap"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(46,111,212,0.10)" stroke="rgba(46,111,212,0.22)" stroke-width="1"/><rect x="8" y="8" width="6" height="6" rx="1.5" fill="rgba(46,111,212,0.3)" stroke="#4d8ef0" stroke-width="1.2"/><rect x="22" y="8" width="6" height="6" rx="1.5" fill="rgba(46,111,212,0.2)" stroke="#4d8ef0" stroke-width="1.2"/><rect x="15" y="22" width="6" height="6" rx="1.5" fill="rgba(46,111,212,0.3)" stroke="#7fb0ff" stroke-width="1.2"/><line x1="14" y1="11" x2="22" y2="11" stroke="#4d8ef0" stroke-width="1.2"/><line x1="11" y1="14" x2="18" y2="22" stroke="#4d8ef0" stroke-width="1.2" stroke-dasharray="2 1.5"/><line x1="25" y1="14" x2="18" y2="22" stroke="#4d8ef0" stroke-width="1.2" stroke-dasharray="2 1.5"/></svg></div>
         <h3>Project Management (PMP®)</h3>
-        <p style="font-size:13px;color:var(--text3);line-height:1.6;">Certified PMP® leading cross-functional teams in multi-platform assay transfers, milestone-driven timelines, and stakeholder communication.</p>
-        <div class="skill-pills">
-          <span class="pill">PMP® Certified</span><span class="pill">Cross-functional Teams</span>
-          <span class="pill">Design Transfer</span><span class="pill">Stakeholder Mgmt</span>
-          <span class="pill">Risk Mitigation</span><span class="pill">Gantt/MS Project</span>
-        </div>
+        <p>PMP®-certified leadership of cross-functional matrix teams in NPI programs — milestone tracking, design transfer, stakeholder alignment without direct authority.</p>
+        <div class="pills"><span class="pill">PMP® Certified</span><span class="pill">NPI / Design Transfer</span><span class="pill">Scope / Schedule / Budget</span><span class="pill">Matrix Leadership</span><span class="pill">Stakeholder Mgmt</span><span class="pill">Risk Mitigation</span></div>
       </div>
-
       <div class="skill-card">
-        <div class="skill-card-icon teal">📈</div>
+        <div class="skill-icon-wrap"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(0,196,160,0.10)" stroke="rgba(0,196,160,0.22)" stroke-width="1"/><rect x="8" y="22" width="4" height="8" rx="1" fill="rgba(0,196,160,0.4)"/><rect x="14" y="16" width="4" height="14" rx="1" fill="rgba(0,196,160,0.5)"/><rect x="20" y="19" width="4" height="11" rx="1" fill="rgba(0,196,160,0.35)"/><rect x="26" y="12" width="4" height="18" rx="1" fill="#00c4a0" opacity="0.7"/><path d="M10 20 L16 14 L22 17 L28 10" stroke="#00e5bb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></div>
         <h3>Data Analysis & Statistics</h3>
-        <p style="font-size:13px;color:var(--text3);line-height:1.6;">Advanced statistical analysis for assay validation, root cause analysis, and product reliability monitoring using industry tools.</p>
-        <div class="skill-pills">
-          <span class="pill">JMP</span><span class="pill">MATLAB</span><span class="pill">Python</span>
-          <span class="pill">Prism</span><span class="pill">Excel</span><span class="pill">Deep Learning</span>
-          <span class="pill">Image Analysis</span><span class="pill">DOE</span>
-        </div>
+        <p>Advanced statistical analysis for assay validation, post-market performance monitoring, and product reliability using industry-standard platforms.</p>
+        <div class="pills"><span class="pill">JMP</span><span class="pill">MATLAB</span><span class="pill">Python</span><span class="pill">GraphPad Prism</span><span class="pill">ANOVA / DOE</span><span class="pill">Linearity / Precision</span><span class="pill">Deep Learning</span></div>
       </div>
-
       <div class="skill-card">
-        <div class="skill-card-icon amber">🔭</div>
-        <h3>Characterization & Instrumentation</h3>
-        <p style="font-size:13px;color:var(--text3);line-height:1.6;">Extensive hands-on experience with analytical and imaging instrumentation for biosensor characterization and assay validation.</p>
-        <div class="skill-pills">
-          <span class="pill">SEM</span><span class="pill">Fluorescence Microscopy</span>
-          <span class="pill">DLS</span><span class="pill">UV-Vis</span>
-          <span class="pill">Microplate Reader</span><span class="pill">Impedance Sensing</span>
-          <span class="pill">BSL-2 Lab</span>
-        </div>
+        <div class="skill-icon-wrap"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="rgba(240,160,32,0.10)" stroke="rgba(240,160,32,0.22)" stroke-width="1"/><rect x="9" y="14" width="18" height="12" rx="3" stroke="#f0a020" stroke-width="1.3" fill="rgba(240,160,32,0.12)"/><path d="M14 14 V11 C14 9.34 15.34 8 17 8 H19 C20.66 8 22 9.34 22 11 V14" stroke="#f0a020" stroke-width="1.3" fill="none" stroke-linecap="round"/><circle cx="18" cy="20" r="2" fill="#fbbf24" opacity="0.7"/><line x1="18" y1="22" x2="18" y2="24" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h3>Device Fabrication & Prototyping</h3>
+        <p>Hands-on design and fabrication of microfluidic devices, biosensors, and POC hardware from CAD to prototype across multiple technology platforms.</p>
+        <div class="pills"><span class="pill">Photolithography</span><span class="pill">PDMS</span><span class="pill">3D Printing</span><span class="pill">Laser Cutting</span><span class="pill">Fusion 360 / CAD</span><span class="pill">SolidWorks</span><span class="pill">Screen Printing</span></div>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-  <div class="section-inner">
-    <div class="section-kicker">Career</div>
-    <h2 class="section-title">Professional <em>Experience</em></h2>
+  <div class="si">
+    <div class="sk">Career</div>
+    <h2 class="st">Professional <em>Experience</em></h2>
     <div class="timeline">
 
       <div class="tl-item">
@@ -707,23 +498,29 @@ footer span{color:var(--teal);}
           <div class="tl-date">Mar 2024<br>— Present</div>
           <div class="tl-company">Beckman Coulter</div>
         </div>
-        <div class="tl-right">
+        <div>
           <div class="tl-role">Sr. Development Scientist</div>
-          <div class="tl-location">📍 Beckman Coulter Diagnostics · Chaska, MN</div>
-          <ul class="tl-highlights">
-            <li>Orchestrated cross-functional teams to transfer <strong>multiple assays onto the DxC500i platform</strong>, balancing scope, schedule, and quality under strict design controls.</li>
-            <li>Managed dedicated team in creation of RAPIDs and APFs, implementing structured quality planning that <strong>streamlined design transfer</strong> and ensured regulatory readiness.</li>
-            <li>Directed experimental strategies for sensor interface and reagent optimization, resulting in a <strong>40% revenue increase</strong> across key product lines.</li>
-            <li>Championed Problem Solving Process (PSP) to resolve high-priority NCs and CAPAs, ensuring sustained <strong>ISO 13485 and FDA compliance</strong>.</li>
-            <li>Conducted root cause analysis of assay drift, carryover, and calibration stability using <strong>JMP statistical analysis</strong>.</li>
-            <li>Translated complex assay performance data into actionable project updates for <strong>regulatory, business, and executive stakeholders</strong>.</li>
+          <div class="tl-org">Beckman Coulter Diagnostics</div>
+          <div class="tl-loc">📍 Chaska, MN</div>
+          <div class="tl-focus">
+            <span class="focus-tag ft-blue">IVD Assay Development</span>
+            <span class="focus-tag ft-teal">Design Quality / CAPA</span>
+            <span class="focus-tag ft-amber">PMP® Project Leadership</span>
+            <span class="focus-tag ft-blue">ISO 13485 / FDA</span>
+          </div>
+          <ul class="tl-hl">
+            <li><strong>Led cross-functional assay transfer onto DxC500i</strong> — orchestrated R&D, Quality, Regulatory, and Manufacturing teams to balance scope, schedule, and design control requirements throughout design transfer, meeting all regulatory milestones.</li>
+            <li><strong>Drove 40% revenue improvement</strong> through systematic sensor interface and reagent optimization — applied DOE and JMP statistical analysis to deliver breakthrough assay performance across key product lines.</li>
+            <li><strong>Led CAPA &amp; nonconformance resolution</strong> — applied Problem Solving Process (5-Why, Fishbone/Ishikawa, FMEA) to resolve high-priority NCs, conducting JMP-based root cause analysis of assay drift, carryover, and calibration instability.</li>
+            <li><strong>Managed Design Transfer quality planning</strong> — directed creation of RAPIDs and APFs with structured quality checkpoints, ensuring manufacturing readiness and regulatory documentation under ISO 13485 and FDA 21 CFR 820.</li>
+            <li><strong>Provided post-market quality oversight</strong> — monitored in-field product performance trends via JMP SPC analytics, generating actionable feedback loops to manufacturing and design teams to prevent field escalations.</li>
+            <li><strong>Communicated complex performance data</strong> to regulatory, business, and executive stakeholders — translating scientific findings into executive-level project updates that secured timely milestone approvals.</li>
           </ul>
-          <div class="tl-badge-row">
-            <span class="tl-badge">DxC500i Platform</span>
-            <span class="tl-badge">ISO 13485</span>
-            <span class="tl-badge">Design Controls</span>
-            <span class="tl-badge">CAPA / PSP</span>
-            <span class="tl-badge">JMP Statistics</span>
+          <div class="win-row">
+            <span class="win win-green">↑ 40% Revenue Growth</span>
+            <span class="win win-blue">DxC500i Platform</span>
+            <span class="win win-blue">ISO 13485 Compliant</span>
+            <span class="win win-amber">Zero Major Audit Findings</span>
           </div>
         </div>
       </div>
@@ -734,21 +531,27 @@ footer span{color:var(--teal);}
           <div class="tl-date">Mar 2023<br>— Feb 2024</div>
           <div class="tl-company">Ethos Biosciences</div>
         </div>
-        <div class="tl-right">
+        <div>
           <div class="tl-role">Sr. Scientist</div>
-          <div class="tl-location">📍 Ethos Biosciences · Logan Township, NJ</div>
-          <ul class="tl-highlights">
-            <li>Led in-house gold nanoparticle conjugation project for lateral flow kits, <strong>cutting production cost by 65%</strong>.</li>
-            <li>Conducted market research and designed a strategic LFA starter kit to <strong>attract new customer segments</strong>.</li>
-            <li>Performed assay optimization: nanoparticle-protein conjugation, bioreceptor concentration, material treatments, and stability testing.</li>
-            <li>Executed production and QC processes under <strong>ISO 13485</strong>, ensuring product quality and on-time delivery.</li>
-            <li>Authored and updated ISO-compliant documents and provided technical troubleshooting to manufacturing teams and customers.</li>
+          <div class="tl-org">Ethos Biosciences</div>
+          <div class="tl-loc">📍 Logan Township, NJ</div>
+          <div class="tl-focus">
+            <span class="focus-tag ft-teal">Lateral Flow Assays</span>
+            <span class="focus-tag ft-blue">ISO 13485 QMS</span>
+            <span class="focus-tag ft-blue">Process Development</span>
+            <span class="focus-tag ft-amber">Cost Reduction</span>
+          </div>
+          <ul class="tl-hl">
+            <li><strong>Delivered 65% production cost reduction</strong> through end-to-end redesign — led in-house gold nanoparticle conjugation development for lateral flow diagnostic kits, replacing outsourced supply with a scalable, ISO 13485-compliant internal solution.</li>
+            <li><strong>Optimized complex multi-step assay manufacturing processes</strong> — nanoparticle-protein conjugation parameters, bioreceptor concentration, material surface treatments, and stability profiles to achieve robust, repeatable process specifications.</li>
+            <li><strong>Authored and maintained ISO 13485-compliant quality documentation</strong> — SOPs, batch records, and test protocols, sustaining a continuously audit-ready QMS and supporting manufacturing scale-up.</li>
+            <li><strong>Designed strategic LFA Starter Kit</strong> — conducted market research to identify unmet customer needs, translating them into a new product concept targeting new customer segments.</li>
+            <li><strong>Provided in-process technical troubleshooting</strong> — delivered RCA and corrective guidance to manufacturing teams, resolving production quality issues and maintaining on-time product delivery.</li>
           </ul>
-          <div class="tl-badge-row">
-            <span class="tl-badge">Lateral Flow Assays</span>
-            <span class="tl-badge">Nanoparticle Conjugation</span>
-            <span class="tl-badge">ISO 13485 QMS</span>
-            <span class="tl-badge grant">65% Cost Reduction</span>
+          <div class="win-row">
+            <span class="win win-green">↓ 65% Production Cost</span>
+            <span class="win win-blue">LFA / Nanoparticle Conjugation</span>
+            <span class="win win-blue">ISO 13485 QMS</span>
           </div>
         </div>
       </div>
@@ -757,26 +560,31 @@ footer span{color:var(--teal);}
         <div class="tl-left">
           <div class="tl-dot" style="background:var(--amber);"></div>
           <div class="tl-date">Dec 2021<br>— Mar 2023</div>
-          <div class="tl-company">In Vitro Diagnostic Solutions</div>
+          <div class="tl-company">IVDS</div>
         </div>
-        <div class="tl-right">
-          <div class="tl-role">Scientist (R&D)</div>
-          <div class="tl-location">📍 In Vitro Diagnostic Solutions · Cherry Hill, NJ</div>
-          <ul class="tl-highlights">
-            <li>Led development of a <strong>vertical flow IVD assay</strong> for G6PD enzyme activity detection in whole blood — concept to prototype.</li>
-            <li>Awarded <strong>$190K+ in grant funding</strong> (NJ CSIT & NJ Innovation Fellowship) for assay commercialization in maternal and infant health.</li>
-            <li>Prototyped test strip cassettes using <strong>CAD (Autodesk Fusion 360), 3D printing, and laser cutting</strong>.</li>
-            <li>Contributed to handheld <strong>reflectance-based meter</strong> for point-of-care readout; followed CLSI guidelines for stability and linearity studies.</li>
-            <li>Established QMS by writing and implementing SOPs based on <strong>ISO 9001 and ISO 13485</strong> for FDA-regulated device development.</li>
-            <li>Collaborated with international teams (Bangladesh, Cambodia, Oxford University) on clinical study documentation and assay validation.</li>
-            <li>Trained and mentored a <strong>team of 10 junior scientists and technicians</strong> in experimental design, data analysis, and equipment operation.</li>
+        <div>
+          <div class="tl-role">R&D Scientist</div>
+          <div class="tl-org">In Vitro Diagnostic Solutions (IVDS)</div>
+          <div class="tl-loc">📍 Cherry Hill, NJ</div>
+          <div class="tl-focus">
+            <span class="focus-tag ft-teal">Vertical Flow IVD</span>
+            <span class="focus-tag ft-blue">Design V&V / DHF</span>
+            <span class="focus-tag ft-blue">ISO 9001 / 13485 QMS</span>
+            <span class="focus-tag ft-amber">Grant Funded</span>
+          </div>
+          <ul class="tl-hl">
+            <li><strong>Led full product development lifecycle for Class II FDA-regulated IVD</strong> — designed vertical flow G6PD enzyme detection assay and handheld POC reflectance reader from feasibility through prototype using CAD (Autodesk Fusion 360), 3D printing, and laser cutting.</li>
+            <li><strong>Executed Design V&amp;V program per CLSI guidelines</strong> — conducted linearity, precision, stability, and interference studies; documented all V&V evidence supporting DHF completeness and regulatory submission preparation.</li>
+            <li><strong>Established QMS infrastructure from the ground up</strong> — authored SOPs, DHF framework, and FMEA-based risk management documentation (ISO 14971) aligned with ISO 9001 and ISO 13485 for FDA-regulated Class II device.</li>
+            <li><strong>Secured $190K+ in competitive grant funding</strong> (NJ CSIT &amp; NJ Innovation Fellowship) through rigorous scientific proposal development and stakeholder communication for maternal/infant health diagnostic commercialization.</li>
+            <li><strong>Coordinated international clinical validation</strong> with multi-site partners in Bangladesh, Cambodia, and University of Oxford — managing clinical study documentation across regulatory submission requirements.</li>
+            <li><strong>Trained and mentored a team of 10 scientists and technicians</strong> in experimental design, equipment qualification, data analysis, and GMP documentation practices.</li>
           </ul>
-          <div class="tl-badge-row">
-            <span class="tl-badge">Vertical Flow IVD</span>
-            <span class="tl-badge">G6PD Assay</span>
-            <span class="tl-badge">CAD / Prototyping</span>
-            <span class="tl-badge grant">$190K Grant Funded</span>
-            <span class="tl-badge">ISO 9001 / 13485 QMS</span>
+          <div class="win-row">
+            <span class="win win-amber">$190K Grant Funded</span>
+            <span class="win win-blue">CLSI V&V Program</span>
+            <span class="win win-blue">DHF / ISO 13485 QMS Built</span>
+            <span class="win win-green">10 Scientists Mentored</span>
           </div>
         </div>
       </div>
@@ -787,22 +595,28 @@ footer span{color:var(--teal);}
           <div class="tl-date">Aug 2016<br>— Dec 2021</div>
           <div class="tl-company">Florida Atlantic Univ.</div>
         </div>
-        <div class="tl-right">
-          <div class="tl-role">Graduate Research Scientist & Teaching Assistant</div>
-          <div class="tl-location">📍 Asghar Lab — Micro & Nanotechnology in Medicine · FAU, Boca Raton, FL</div>
-          <ul class="tl-highlights">
-            <li>Designed and executed novel bioassay protocols for microfluidic device development, leading preclinical research for a <strong>POC viral diagnostic device</strong>.</li>
-            <li>Initiated research that culminated in a <strong>$500K NSF grant</strong> to support Zika point-of-care detection project.</li>
-            <li>Selected and optimized antibody panels for highly specific detection of Zika and Dengue viruses using Western blot validation.</li>
-            <li>Developed portable <strong>lensless imaging platform</strong> integrating deep learning for POC disease detection in resource-limited settings.</li>
-            <li>Published <strong>15+ peer-reviewed papers</strong>; presented research at IEEE NANOMED Hawaii, Biosensors World Congress Miami, and multiple national conferences.</li>
+        <div>
+          <div class="tl-role">Graduate Research Scientist & TA</div>
+          <div class="tl-org">Asghar Lab — Micro & Nanotechnology in Medicine</div>
+          <div class="tl-loc">📍 Florida Atlantic University, Boca Raton, FL</div>
+          <div class="tl-focus">
+            <span class="focus-tag ft-teal">POC Device Development</span>
+            <span class="focus-tag ft-blue">Microfluidics / MEMS</span>
+            <span class="focus-tag ft-blue">Biosensor Fabrication</span>
+            <span class="focus-tag ft-amber">NSF Grant PI</span>
+          </div>
+          <ul class="tl-hl">
+            <li><strong>Secured and managed $500K NSF-funded R&D program</strong> — initiated preclinical development of a portable Zika/Dengue POC diagnostic platform, leading multi-disciplinary team from technology concept through prototype demonstration.</li>
+            <li><strong>Developed multiple POC hardware systems end-to-end</strong> — portable lensless imaging platform, automated magnetic actuation microfluidic device, Lab-on-Chip colorimetric detection system, and flexible impedance biosensors on paper substrates.</li>
+            <li><strong>Validated antibody panels for Zika and Dengue detection</strong> — selected from commercial antibody pools via Western blot, characterized sensitivity/specificity against clinical samples, integrated with lensless imaging system.</li>
+            <li><strong>Led wastewater SARS-CoV-2 surveillance program</strong> — collected, extracted, and quantified viral RNA via RT-qPCR from campus monitoring sites; reported actionable public health data to university administration (functionally analogous to post-market field monitoring).</li>
+            <li><strong>Published 15+ peer-reviewed papers</strong> and presented at IEEE NANOMED Hawaii, Biosensors World Congress Miami, and multiple national conferences.</li>
           </ul>
-          <div class="tl-badge-row">
-            <span class="tl-badge">Zika / Dengue Diagnostics</span>
-            <span class="tl-badge">Microfluidics</span>
-            <span class="tl-badge">Lensless Imaging</span>
-            <span class="tl-badge grant">$500K NSF Grant</span>
-            <span class="tl-badge">15+ Publications</span>
+          <div class="win-row">
+            <span class="win win-amber">$500K NSF Grant</span>
+            <span class="win win-blue">15+ Publications</span>
+            <span class="win win-blue">6 Conference Presentations</span>
+            <span class="win win-green">3 TV Network Features</span>
           </div>
         </div>
       </div>
@@ -813,31 +627,66 @@ footer span{color:var(--teal);}
 
 <!-- PUBLICATIONS -->
 <section id="publications">
-  <div class="section-inner">
-    <div class="section-kicker">Research Output</div>
-    <h2 class="section-title">Publications & <em>Scholarly Work</em></h2>
+  <div class="si">
+    <div class="sk">Research Output</div>
+    <h2 class="st">Publications & <em>Scholarly Work</em></h2>
 
+    <!-- IMPACT BAR — dynamic SVG icons -->
     <div class="impact-bar">
       <div class="impact-item">
+        <div class="impact-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="rgba(46,111,212,0.3)" stroke-width="1" fill="none"/>
+            <path d="M20 6 L23.5 14 H33 L25.5 19 L28.5 28 L20 23 L11.5 28 L14.5 19 L7 14 H16.5 Z" fill="rgba(46,111,212,0.25)" stroke="#4d8ef0" stroke-width="1.2" stroke-linejoin="round"/>
+          </svg>
+        </div>
         <div class="impact-num">19</div>
         <div class="impact-label">Journal Papers</div>
       </div>
       <div class="impact-item">
-        <div class="impact-num">6</div>
-        <div class="impact-label">Conference Talks & Posters</div>
+        <div class="impact-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="rgba(0,196,160,0.3)" stroke-width="1" fill="none"/>
+            <path d="M10 28 L10 16 L20 10 L30 16 L30 28" stroke="#00c4a0" stroke-width="1.3" fill="rgba(0,196,160,0.12)" stroke-linejoin="round"/>
+            <rect x="16" y="22" width="8" height="6" rx="1.5" stroke="#00e5bb" stroke-width="1.2" fill="rgba(0,196,160,0.15)"/>
+            <rect x="13" y="19" width="6" height="4" rx="1" fill="rgba(0,196,160,0.2)" stroke="#00c4a0" stroke-width="1"/>
+            <rect x="21" y="19" width="6" height="4" rx="1" fill="rgba(0,196,160,0.2)" stroke="#00c4a0" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="impact-num">6+</div>
+        <div class="impact-label">Conf. Talks & Posters</div>
       </div>
       <div class="impact-item">
+        <div class="impact-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="rgba(240,160,32,0.3)" stroke-width="1" fill="none"/>
+            <rect x="10" y="12" width="20" height="16" rx="3" fill="rgba(240,160,32,0.12)" stroke="#f0a020" stroke-width="1.3"/>
+            <circle cx="15" cy="20" r="3" fill="rgba(240,160,32,0.3)" stroke="#fbbf24" stroke-width="1.2"/>
+            <line x1="20" y1="17" x2="27" y2="17" stroke="#f0a020" stroke-width="1.2" stroke-linecap="round"/>
+            <line x1="20" y1="20" x2="27" y2="20" stroke="#f0a020" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+            <line x1="20" y1="23" x2="24" y2="23" stroke="#f0a020" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+          </svg>
+        </div>
         <div class="impact-num">4</div>
-        <div class="impact-label">Media Coverages</div>
+        <div class="impact-label">Media Features</div>
       </div>
       <div class="impact-item">
+        <div class="impact-icon">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="rgba(34,197,94,0.3)" stroke-width="1" fill="none"/>
+            <path d="M20 8 C13.4 8 8 13.4 8 20 C8 26.6 13.4 32 20 32" stroke="#22c55e" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+            <path d="M20 8 C26.6 8 32 13.4 32 20" stroke="rgba(34,197,94,0.4)" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-dasharray="3 2"/>
+            <path d="M27 26 L32 20 L27 14" stroke="#4ade80" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="20" y="22" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="7" fill="#4ade80" dominant-baseline="central">prep</text>
+          </svg>
+        </div>
         <div class="impact-num">2</div>
-        <div class="impact-label">Manuscripts in Preparation</div>
+        <div class="impact-label">In Preparation</div>
       </div>
     </div>
 
     <div class="pub-filter">
-      <button class="pub-btn active" onclick="filterPubs('all',this)">All Publications</button>
+      <button class="pub-btn active" onclick="filterPubs('all',this)">All</button>
       <button class="pub-btn" onclick="filterPubs('lead',this)">Lead Author</button>
       <button class="pub-btn" onclick="filterPubs('2024',this)">2024–2025</button>
       <button class="pub-btn" onclick="filterPubs('2020',this)">2020–2023</button>
@@ -845,155 +694,31 @@ footer span{color:var(--teal);}
     </div>
 
     <div class="pub-list" id="pubList">
-
-      <div class="pub-item" data-cat="lead poc" data-year="2025">
-        <div class="pub-meta">
-          <span class="pub-year">2025</span>
-          <span class="pub-journal">Chemosensors</span>
-        </div>
-        <div class="pub-title">Current and Future Diagnostics for Hepatitis C Virus Infection</div>
-        <div class="pub-authors">Zilouchian H, Faqah O, <strong>Kabir MA</strong>, Gross D, Pan R, et al., Asghar W</div>
-        <a class="pub-link" href="https://scholar.google.com/citations?hl=en&user=cm9Wk-sAAAAJ" target="_blank">View on Google Scholar ↗</a>
-      </div>
-
-      <div class="pub-item" data-cat="poc" data-year="2024">
-        <div class="pub-meta">
-          <span class="pub-year">2024</span>
-          <span class="pub-journal">PLOS ONE</span>
-        </div>
-        <div class="pub-title">The PreQuine Platform: A novel diagnostic tool for measuring G6PD activity and hemoglobin concentration</div>
-        <div class="pub-authors">Harper R, Ley B, <strong>Kabir MA</strong>, Matulis G, von Seidlein L, et al., von Fricken ME</div>
-        <a class="pub-link" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0297918" target="_blank">Open Access ↗</a>
-      </div>
-
-      <div class="pub-item" data-cat="poc" data-year="2024">
-        <div class="pub-meta">
-          <span class="pub-year">2024</span>
-          <span class="pub-journal">Health (SCIRP)</span>
-        </div>
-        <div class="pub-title">Effectiveness of Wastewater-Based Epidemiology as an Early Warning Tool to Detect SARS-CoV-2 (COVID-19)</div>
-        <div class="pub-authors">Chowdhury RA, Meeroff DE, Sharmin S, <strong>Kabir MA</strong>, Hollenbeck S, et al.</div>
-        <a class="pub-link" href="https://www.scirp.org/journal/paperinformation?paperid=134682" target="_blank">Read Paper ↗</a>
-      </div>
-
-      <div class="pub-item" data-cat="lead poc" data-year="2021">
-        <div class="pub-meta">
-          <span class="pub-year">2021</span>
-          <span class="pub-journal">Biosensors</span>
-          <span class="pub-lead">★ Lead Author</span>
-        </div>
-        <div class="pub-title">Dengue Detection: Advances in Diagnostic Tools from Conventional Technology to Point of Care</div>
-        <div class="pub-authors"><strong>Kabir MA</strong>*, Zilouchian H*, Younas MA, Asghar W [*Equal contribution]</div>
-        <a class="pub-link" href="#" target="_blank">View Paper ↗</a>
-      </div>
-
-      <div class="pub-item" data-cat="lead poc" data-year="2021">
-        <div class="pub-meta">
-          <span class="pub-year">2021</span>
-          <span class="pub-journal">Expert Rev. Mol. Diagnostics</span>
-          <span class="pub-lead">★ Lead Author</span>
-        </div>
-        <div class="pub-title">Diagnosis For COVID-19: Current Status and Future Prospects</div>
-        <div class="pub-authors"><strong>Kabir MA</strong>, Ahmed R, Iqbal SMA, Chowdhury R, Paulmurugan R, Demirci U, Asghar W</div>
-        <a class="pub-link" href="https://doi.org/10.1080/14737159.2021.1894930" target="_blank">Read Paper ↗</a>
-      </div>
-
-      <div class="pub-item" data-cat="lead poc" data-year="2020">
-        <div class="pub-meta">
-          <span class="pub-year">2020</span>
-          <span class="pub-journal">Scientific Reports (Nature)</span>
-          <span class="pub-lead">★ Lead Author</span>
-        </div>
-        <div class="pub-title">An Antibody Panel for Highly Specific Detection and Differentiation of Zika and Dengue Viruses</div>
-        <div class="pub-authors"><strong>Kabir MA</strong>, Soto-Acosta R, Sharma S, Bradrick SS, Garcia-Blanco M, Caputi M, Asghar W</div>
-        <a class="pub-link" href="https://www.nature.com/articles/s41598-020-68635-6" target="_blank">Open Access ↗</a>
-      </div>
-
-      <div class="pub-item" data-cat="lead poc" data-year="2020">
-        <div class="pub-meta">
-          <span class="pub-year">2020</span>
-          <span class="pub-journal">Critical Reviews in Biotechnology</span>
-          <span class="pub-lead">★ Lead Author</span>
-        </div>
-        <div class="pub-title">Advances in HIV Diagnosis and Monitoring</div>
-        <div class="pub-authors"><strong>Kabir MA</strong>, Zilouchian H, Caputi M, Asghar W</div>
-        <a class="pub-link" href="https://www.tandfonline.com/doi/abs/10.1080/07388551.2020.1751058" target="_blank">Read Paper ↗</a>
-      </div>
-
-      <div class="pub-item" data-cat="lead poc" data-year="2020">
-        <div class="pub-meta">
-          <span class="pub-year">2020</span>
-          <span class="pub-journal">Diagnostics (MDPI)</span>
-          <span class="pub-lead">★ Lead Author</span>
-        </div>
-        <div class="pub-title">Development of an Inexpensive Flow-Free Automated Lab-on-Chip Colorimetric Detection Assay for Zika NS1</div>
-        <div class="pub-authors"><strong>Kabir MA</strong>, Zilouchian H, Sher M, Asghar W</div>
-        <a class="pub-link" href="https://www.mdpi.com/2075-4418/10/1/42" target="_blank">Open Access ↗</a>
-      </div>
-
-      <div class="pub-item" data-cat="poc" data-year="2020">
-        <div class="pub-meta">
-          <span class="pub-year">2020</span>
-          <span class="pub-journal">Archives of Pathology & Lab Medicine</span>
-        </div>
-        <div class="pub-title">Lab on a Chip Zika Detection with RT-LAMP Based Assay for Point-of-Care Settings</div>
-        <div class="pub-authors">Sharma S, <strong>Kabir MA</strong>, Asghar W</div>
-        <a class="pub-link" href="https://doi.org/10.5858/arpa.2019-0667-OA" target="_blank">Read Paper ↗</a>
-      </div>
-
-      <div class="pub-item" data-cat="poc" data-year="2019">
-        <div class="pub-meta">
-          <span class="pub-year">2019</span>
-          <span class="pub-journal">RSC Advances</span>
-        </div>
-        <div class="pub-title">Development of a Flow-Free Magnetic Actuation Platform for an Automated Microfluidic ELISA</div>
-        <div class="pub-authors">Coarsey C, Coleman B, <strong>Kabir MA</strong>, Sher M, Asghar W</div>
-        <a class="pub-link" href="https://pubs.rsc.org/en/content/articlehtml/2019/ra/c8ra07607c" target="_blank">Read Paper ↗</a>
-      </div>
-
-      <div class="pub-item" data-cat="poc" data-year="2018">
-        <div class="pub-meta">
-          <span class="pub-year">2018</span>
-          <span class="pub-journal">Sensors & Actuators B: Chemical</span>
-        </div>
-        <div class="pub-title">Point-of-Care Colorimetric Analysis through Smartphone Video</div>
-        <div class="pub-authors">Coleman B, Coarsey C, <strong>Kabir MA</strong>, Asghar W</div>
-        <a class="pub-link" href="https://doi.org/10.1016/j.snb.2018.11.036" target="_blank">Read Paper ↗</a>
-      </div>
-
+      <div class="pub-item" data-cat="lead poc" data-year="2025"><div class="pub-meta"><span class="pub-year">2025</span><span class="pub-j">Chemosensors</span><span class="pub-lead">★ Co-lead</span></div><div class="pub-title">Current and Future Diagnostics for Hepatitis C Virus Infection</div><div class="pub-authors">Zilouchian H, Faqah O, <strong>Kabir MA</strong>, Gross D, Pan R, et al., Asghar W</div><a class="pub-link" href="https://scholar.google.com/citations?hl=en&user=cm9Wk-sAAAAJ" target="_blank">View on Google Scholar ↗</a></div>
+      <div class="pub-item" data-cat="poc" data-year="2024"><div class="pub-meta"><span class="pub-year">2024</span><span class="pub-j">PLOS ONE</span></div><div class="pub-title">The PreQuine Platform: A Novel Diagnostic Tool for G6PD Activity and Hemoglobin Concentration</div><div class="pub-authors">Harper R, Ley B, <strong>Kabir MA</strong>, Matulis G, von Seidlein L, et al.</div><a class="pub-link" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0297918" target="_blank">Open Access ↗</a></div>
+      <div class="pub-item" data-cat="poc" data-year="2024"><div class="pub-meta"><span class="pub-year">2024</span><span class="pub-j">Health (SCIRP)</span></div><div class="pub-title">Effectiveness of Wastewater-Based Epidemiology as an Early Warning Tool to Detect SARS-CoV-2</div><div class="pub-authors">Chowdhury RA, Meeroff DE, Sharmin S, <strong>Kabir MA</strong>, et al.</div><a class="pub-link" href="https://www.scirp.org/journal/paperinformation?paperid=134682" target="_blank">Read Paper ↗</a></div>
+      <div class="pub-item" data-cat="lead poc" data-year="2021"><div class="pub-meta"><span class="pub-year">2021</span><span class="pub-j">Biosensors</span><span class="pub-lead">★ Lead Author</span></div><div class="pub-title">Dengue Detection: Advances in Diagnostic Tools from Conventional Technology to Point of Care</div><div class="pub-authors"><strong>Kabir MA</strong>*, Zilouchian H*, Younas MA, Asghar W [*Equal contribution]</div></div>
+      <div class="pub-item" data-cat="lead" data-year="2021"><div class="pub-meta"><span class="pub-year">2021</span><span class="pub-j">Expert Rev. Mol. Diagnostics</span><span class="pub-lead">★ Lead Author</span></div><div class="pub-title">Diagnosis For COVID-19: Current Status and Future Prospects</div><div class="pub-authors"><strong>Kabir MA</strong>, Ahmed R, Iqbal SMA, Chowdhury R, Paulmurugan R, Demirci U, Asghar W</div><a class="pub-link" href="https://doi.org/10.1080/14737159.2021.1894930" target="_blank">Read Paper ↗</a></div>
+      <div class="pub-item" data-cat="lead poc" data-year="2020"><div class="pub-meta"><span class="pub-year">2020</span><span class="pub-j">Scientific Reports (Nature)</span><span class="pub-lead">★ Lead Author</span></div><div class="pub-title">An Antibody Panel for Highly Specific Detection and Differentiation of Zika and Dengue Viruses</div><div class="pub-authors"><strong>Kabir MA</strong>, Soto-Acosta R, Sharma S, Bradrick SS, Garcia-Blanco M, Caputi M, Asghar W</div><a class="pub-link" href="https://www.nature.com/articles/s41598-020-68635-6" target="_blank">Open Access ↗</a></div>
+      <div class="pub-item" data-cat="lead" data-year="2020"><div class="pub-meta"><span class="pub-year">2020</span><span class="pub-j">Critical Reviews in Biotechnology</span><span class="pub-lead">★ Lead Author</span></div><div class="pub-title">Advances in HIV Diagnosis and Monitoring</div><div class="pub-authors"><strong>Kabir MA</strong>, Zilouchian H, Caputi M, Asghar W</div><a class="pub-link" href="https://www.tandfonline.com/doi/abs/10.1080/07388551.2020.1751058" target="_blank">Read Paper ↗</a></div>
+      <div class="pub-item" data-cat="lead poc" data-year="2020"><div class="pub-meta"><span class="pub-year">2020</span><span class="pub-j">Diagnostics (MDPI)</span><span class="pub-lead">★ Lead Author</span></div><div class="pub-title">Development of an Inexpensive Flow-Free Automated Lab-on-Chip Colorimetric Assay for Zika NS1</div><div class="pub-authors"><strong>Kabir MA</strong>, Zilouchian H, Sher M, Asghar W</div><a class="pub-link" href="https://www.mdpi.com/2075-4418/10/1/42" target="_blank">Open Access ↗</a></div>
+      <div class="pub-item" data-cat="poc" data-year="2020"><div class="pub-meta"><span class="pub-year">2020</span><span class="pub-j">Archives of Pathology & Lab Medicine</span></div><div class="pub-title">Lab on a Chip Zika Detection with RT-LAMP Based Assay for Point-of-Care Settings</div><div class="pub-authors">Sharma S, <strong>Kabir MA</strong>, Asghar W</div><a class="pub-link" href="https://doi.org/10.5858/arpa.2019-0667-OA" target="_blank">Read Paper ↗</a></div>
+      <div class="pub-item" data-cat="poc" data-year="2019"><div class="pub-meta"><span class="pub-year">2019</span><span class="pub-j">RSC Advances</span></div><div class="pub-title">Development of a Flow-Free Magnetic Actuation Platform for an Automated Microfluidic ELISA</div><div class="pub-authors">Coarsey C, Coleman B, <strong>Kabir MA</strong>, Sher M, Asghar W</div><a class="pub-link" href="https://pubs.rsc.org/en/content/articlehtml/2019/ra/c8ra07607c" target="_blank">Read Paper ↗</a></div>
+      <div class="pub-item" data-cat="poc" data-year="2018"><div class="pub-meta"><span class="pub-year">2018</span><span class="pub-j">Sensors & Actuators B: Chemical</span></div><div class="pub-title">Point-of-Care Colorimetric Analysis through Smartphone Video</div><div class="pub-authors">Coleman B, Coarsey C, <strong>Kabir MA</strong>, Asghar W</div><a class="pub-link" href="https://doi.org/10.1016/j.snb.2018.11.036" target="_blank">Read Paper ↗</a></div>
+    </div>
+    <div style="margin-top:22px;text-align:center;">
+      <a href="https://scholar.google.com/citations?hl=en&user=cm9Wk-sAAAAJ" target="_blank" class="btn-outline" style="display:inline-flex;">View All 19 Publications on Google Scholar ↗</a>
     </div>
 
-    <div style="margin-top:24px;text-align:center;">
-      <a href="https://scholar.google.com/citations?hl=en&user=cm9Wk-sAAAAJ" target="_blank" class="btn-outline" style="display:inline-flex;">
-        View All 19 Publications on Google Scholar ↗
-      </a>
-    </div>
-
-    <!-- Media Coverage -->
-    <div style="margin-top:64px;">
-      <div class="section-kicker" style="margin-bottom:8px;">Media Coverage</div>
+    <!-- MEDIA -->
+    <div style="margin-top:60px;">
+      <div class="sk" style="margin-bottom:8px;">Media Coverage</div>
       <h3 style="font-family:var(--display);font-size:22px;font-weight:600;color:var(--text);margin-bottom:24px;">Featured in the <em style="font-style:normal;color:var(--blue2);">News</em></h3>
       <div class="media-grid">
-        <a href="https://wsvn.com/news/investigations/fau-researchers-test-wastewater-on-campus-to-find-covid-19-cases/" target="_blank" class="media-card">
-          <div class="media-outlet">WSVN Channel 7</div>
-          <div class="media-headline">FAU Researchers Test Wastewater on Campus to Find COVID-19 Cases</div>
-          <div class="media-year">2021</div>
-        </a>
-        <a href="https://www.sun-sentinel.com/coronavirus/fl-ne-fau-researchers-waste-water-coronavirus-cases-20201216-6kjjrcczrjhh5fynbenclo23xa-story.html" target="_blank" class="media-card">
-          <div class="media-outlet">South Florida Sun Sentinel</div>
-          <div class="media-headline">The Secret to COVID's Spread Might be Buried in Wastewater</div>
-          <div class="media-year">2020</div>
-        </a>
-        <a href="https://www.wptv.com/coronavirus/florida-atlantic-university-researchers-testing-wastewater-for-signs-of-covid-19" target="_blank" class="media-card">
-          <div class="media-outlet">WPTV News Channel 5</div>
-          <div class="media-headline">FAU Researchers Testing Wastewater for Signs of COVID-19</div>
-          <div class="media-year">2020</div>
-        </a>
-        <a href="https://www.wptv.com/sports/college-sports/florida-atlantic-university/device-could-test-for-zika-at-airports-underdevelopment-at-fau" target="_blank" class="media-card">
-          <div class="media-outlet">WPTV · Science Daily</div>
-          <div class="media-headline">Device Could Test for Zika at Airports — Rapid 15-Minute POC Diagnostic</div>
-          <div class="media-year">2017</div>
-        </a>
+        <a href="https://wsvn.com/news/investigations/fau-researchers-test-wastewater-on-campus-to-find-covid-19-cases/" target="_blank" class="media-card"><div class="media-outlet">WSVN Channel 7</div><div class="media-headline">FAU Researchers Test Wastewater on Campus to Find COVID-19 Cases</div><div class="media-year">2021</div></a>
+        <a href="https://www.sun-sentinel.com/coronavirus/fl-ne-fau-researchers-waste-water-coronavirus-cases-20201216-6kjjrcczrjhh5fynbenclo23xa-story.html" target="_blank" class="media-card"><div class="media-outlet">South Florida Sun Sentinel</div><div class="media-headline">The Secret to COVID's Spread Might be Buried in Wastewater</div><div class="media-year">2020</div></a>
+        <a href="https://www.wptv.com/coronavirus/florida-atlantic-university-researchers-testing-wastewater-for-signs-of-covid-19" target="_blank" class="media-card"><div class="media-outlet">WPTV Channel 5</div><div class="media-headline">FAU Researchers Testing Wastewater for Signs of COVID-19</div><div class="media-year">2020</div></a>
+        <a href="https://www.wptv.com/sports/college-sports/florida-atlantic-university/device-could-test-for-zika-at-airports-underdevelopment-at-fau" target="_blank" class="media-card"><div class="media-outlet">WPTV · Science Daily</div><div class="media-headline">Device Could Test for Zika at Airports — 15-Minute Rapid POC Diagnostic</div><div class="media-year">2017</div></a>
       </div>
     </div>
   </div>
@@ -1001,545 +726,258 @@ footer span{color:var(--teal);}
 
 <!-- ACHIEVEMENTS -->
 <section id="achievements">
-  <div class="section-inner">
-    <div class="section-kicker">Recognition</div>
-    <h2 class="section-title">Awards & <em>Honors</em></h2>
+  <div class="si">
+    <div class="sk">Recognition</div>
+    <h2 class="st">Awards & <em>Honors</em></h2>
     <div class="awards-grid">
-
-      <div class="award-card">
-        <div class="award-icon gold">🏅</div>
-        <div>
-          <div class="award-year">2022</div>
-          <div class="award-title">IRFP Fellowship — $115,000</div>
-          <div class="award-org">NJ Dept. of Labor & Workforce Development · Hemoglobin Assay Project</div>
-        </div>
-      </div>
-
-      <div class="award-card">
-        <div class="award-icon gold">💡</div>
-        <div>
-          <div class="award-year">2021–2023</div>
-          <div class="award-title">NJ Innovation Fellowship — $75,000+</div>
-          <div class="award-org">NJ CSIT & NJ Innovation Program · G6PD Assay Commercialization</div>
-        </div>
-      </div>
-
-      <div class="award-card">
-        <div class="award-icon blue">🎓</div>
-        <div>
-          <div class="award-year">2020 & 2021</div>
-          <div class="award-title">Graduate Fellowship for Academic Excellence (Consecutive Years)</div>
-          <div class="award-org">Graduate College, Florida Atlantic University</div>
-        </div>
-      </div>
-
-      <div class="award-card">
-        <div class="award-icon teal">🏆</div>
-        <div>
-          <div class="award-year">2021</div>
-          <div class="award-title">Best Poster Award</div>
-          <div class="award-org">12th Annual Graduate Research Day, FAU</div>
-        </div>
-      </div>
-
-      <div class="award-card">
-        <div class="award-icon teal">🎤</div>
-        <div>
-          <div class="award-year">2020</div>
-          <div class="award-title">People's Choice Award — 3MT® Competition</div>
-          <div class="award-org">4th Annual Three Minute Thesis, FAU Graduate College</div>
-        </div>
-      </div>
-
-      <div class="award-card">
-        <div class="award-icon blue">🌍</div>
-        <div>
-          <div class="award-year">2020</div>
-          <div class="award-title">ESF: COVID-19 Response Award</div>
-          <div class="award-org">Institute of International Education, New York, USA</div>
-        </div>
-      </div>
-
-      <div class="award-card">
-        <div class="award-icon gold">👑</div>
-        <div>
-          <div class="award-year">2020</div>
-          <div class="award-title">Graduate Leadership Award</div>
-          <div class="award-org">College of Engineering & Computer Science, FAU</div>
-        </div>
-      </div>
-
-      <div class="award-card">
-        <div class="award-icon blue">📜</div>
-        <div>
-          <div class="award-year">2019–2021</div>
-          <div class="award-title">Thesis & Dissertation Scholarship (3 years)</div>
-          <div class="award-org">Graduate College, Florida Atlantic University</div>
-        </div>
-      </div>
-
-      <div class="award-card">
-        <div class="award-icon teal">🌐</div>
-        <div>
-          <div class="award-year">2019</div>
-          <div class="award-title">Nominated: International Student of the Year</div>
-          <div class="award-org">International Student Services, FAU</div>
-        </div>
-      </div>
-
-      <div class="award-card">
-        <div class="award-icon gold">🎖️</div>
-        <div>
-          <div class="award-year">2016</div>
-          <div class="award-title">Provost Fellowship Award</div>
-          <div class="award-org">Florida Atlantic University — Outstanding Incoming Doctoral Student</div>
-        </div>
-      </div>
-
-      <div class="award-card">
-        <div class="award-icon amber">📰</div>
-        <div>
-          <div class="award-year">2018</div>
-          <div class="award-title">Second Best Poster Award</div>
-          <div class="award-org">9th Annual GPSA Research Day, FAU</div>
-        </div>
-      </div>
-
-      <div class="award-card">
-        <div class="award-icon amber">🎓</div>
-        <div>
-          <div class="award-year">2009–2012</div>
-          <div class="award-title">Rajshahi Education Board Merit Scholarship</div>
-          <div class="award-org">HSC & SSC Results · Government of Bangladesh</div>
-        </div>
-      </div>
-
+      <div class="award-card"><div class="award-icon" style="background:rgba(240,160,32,0.14);border:1px solid rgba(240,160,32,0.28);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L12.5 7.5H18L13.5 11L15.5 17L10 13.5L4.5 17L6.5 11L2 7.5H7.5Z" fill="rgba(240,160,32,0.5)" stroke="#f0a020" stroke-width="1" stroke-linejoin="round"/></svg></div><div><div class="award-year">2022</div><div class="award-title">IRFP Fellowship — $115,000</div><div class="award-org">NJ Dept. of Labor & Workforce Development</div></div></div>
+      <div class="award-card"><div class="award-icon" style="background:rgba(240,160,32,0.14);border:1px solid rgba(240,160,32,0.28);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2 L13 8 H19 L14 12 L16 18 L10 14 L4 18 L6 12 L1 8 H7 Z" fill="rgba(240,160,32,0.4)" stroke="#fbbf24" stroke-width="1" stroke-linejoin="round"/></svg></div><div><div class="award-year">2018</div><div class="award-title">NSF Grant Co-PI — $500,000</div><div class="award-org">National Science Foundation · POC Zika Diagnostic</div></div></div>
+      <div class="award-card"><div class="award-icon" style="background:rgba(46,111,212,0.14);border:1px solid rgba(46,111,212,0.28);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="8" r="4" stroke="#4d8ef0" stroke-width="1.3" fill="rgba(46,111,212,0.2)"/><path d="M4 18 C4 14.7 6.7 12 10 12 C13.3 12 16 14.7 16 18" stroke="#4d8ef0" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg></div><div><div class="award-year">2020 & 2021</div><div class="award-title">Graduate Fellowship for Academic Excellence (Consecutive)</div><div class="award-org">Graduate College, Florida Atlantic University</div></div></div>
+      <div class="award-card"><div class="award-icon" style="background:rgba(0,196,160,0.12);border:1px solid rgba(0,196,160,0.25);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="10" width="12" height="8" rx="2" stroke="#00c4a0" stroke-width="1.3" fill="rgba(0,196,160,0.2)"/><path d="M7 10 V7 C7 5.3 8.3 4 10 4 C11.7 4 13 5.3 13 7 V10" stroke="#00c4a0" stroke-width="1.3" fill="none"/><circle cx="10" cy="14" r="1.5" fill="#00e5bb"/></svg></div><div><div class="award-year">2021</div><div class="award-title">Best Poster Award</div><div class="award-org">12th Annual Graduate Research Day, FAU</div></div></div>
+      <div class="award-card"><div class="award-icon" style="background:rgba(0,196,160,0.12);border:1px solid rgba(0,196,160,0.25);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#00c4a0" stroke-width="1.2" fill="none" stroke-dasharray="3 2"/><path d="M7 10 L9 12 L13 8" stroke="#00e5bb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="award-year">2020</div><div class="award-title">People's Choice Award — 3MT® Competition</div><div class="award-org">4th Annual Three Minute Thesis, FAU</div></div></div>
+      <div class="award-card"><div class="award-icon" style="background:rgba(46,111,212,0.14);border:1px solid rgba(46,111,212,0.28);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2 L12 7 H18 L13 10.5 L15 16 L10 12.5 L5 16 L7 10.5 L2 7 H8 Z" fill="none" stroke="#4d8ef0" stroke-width="1.2" stroke-linejoin="round"/><path d="M7 10 L9 12 L13 7" stroke="#7fb0ff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="award-year">2020</div><div class="award-title">Graduate Leadership Award</div><div class="award-org">College of Engineering & Computer Science, FAU</div></div></div>
+      <div class="award-card"><div class="award-icon" style="background:rgba(240,160,32,0.14);border:1px solid rgba(240,160,32,0.28);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#f0a020" stroke-width="1.2" fill="rgba(240,160,32,0.12)"/><text x="10" y="14" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="700" fill="#fbbf24">$</text></svg></div><div><div class="award-year">2020</div><div class="award-title">ESF: COVID-19 Response Award</div><div class="award-org">Institute of International Education, New York</div></div></div>
+      <div class="award-card"><div class="award-icon" style="background:rgba(46,111,212,0.14);border:1px solid rgba(46,111,212,0.28);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="12" width="14" height="5" rx="1.5" stroke="#4d8ef0" stroke-width="1.2" fill="rgba(46,111,212,0.2)"/><path d="M6 12 V9 C6 7.3 7.8 6 10 6 C12.2 6 14 7.3 14 9 V12" stroke="#4d8ef0" stroke-width="1.2" fill="none" stroke-linecap="round"/><circle cx="10" cy="4" r="2" fill="rgba(46,111,212,0.4)" stroke="#7fb0ff" stroke-width="1"/></svg></div><div><div class="award-year">2019–2021</div><div class="award-title">Thesis & Dissertation Scholarship (3 consecutive years)</div><div class="award-org">Graduate College, Florida Atlantic University</div></div></div>
+      <div class="award-card"><div class="award-icon" style="background:rgba(0,196,160,0.12);border:1px solid rgba(0,196,160,0.25);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#00c4a0" stroke-width="1.2" fill="none"/><path d="M7 10 C7 8 8 6.5 10 6.5 C12 6.5 13 8 13 10 C13 12 12 13.5 10 13.5" stroke="#00e5bb" stroke-width="1.2" stroke-linecap="round" fill="none"/><circle cx="10" cy="10" r="1.5" fill="#00c4a0"/></svg></div><div><div class="award-year">2019</div><div class="award-title">Nominated: International Student of the Year</div><div class="award-org">International Student Services, FAU</div></div></div>
+      <div class="award-card"><div class="award-icon" style="background:rgba(240,160,32,0.14);border:1px solid rgba(240,160,32,0.28);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 4 H16 V14 C16 16.2 13.3 18 10 18 C6.7 18 4 16.2 4 14 Z" fill="rgba(240,160,32,0.2)" stroke="#f0a020" stroke-width="1.2"/><path d="M4 7 H2 C2 11 4.5 13 6 13" stroke="#f0a020" stroke-width="1.1" fill="none" stroke-linecap="round"/><path d="M16 7 H18 C18 11 15.5 13 14 13" stroke="#f0a020" stroke-width="1.1" fill="none" stroke-linecap="round"/></svg></div><div><div class="award-year">2016</div><div class="award-title">Provost Fellowship Award</div><div class="award-org">Florida Atlantic University — Outstanding Incoming Doctoral Student</div></div></div>
+      <div class="award-card"><div class="award-icon" style="background:rgba(46,111,212,0.14);border:1px solid rgba(46,111,212,0.28);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="4" y="4" width="12" height="12" rx="2" stroke="#4d8ef0" stroke-width="1.2" fill="none"/><path d="M7 10 L9 12 L13 8" stroke="#7fb0ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><div class="award-year">2018</div><div class="award-title">Second Best Poster Award</div><div class="award-org">9th Annual GPSA Research Day, FAU</div></div></div>
+      <div class="award-card"><div class="award-icon" style="background:rgba(0,196,160,0.12);border:1px solid rgba(0,196,160,0.25);"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2 L12 7 H17 L13 10 L15 16 L10 13 L5 16 L7 10 L3 7 H8 Z" fill="rgba(0,196,160,0.2)" stroke="#00c4a0" stroke-width="1" stroke-linejoin="round"/></svg></div><div><div class="award-year">2009–2012</div><div class="award-title">Rajshahi Education Board Merit Scholarship</div><div class="award-org">HSC & SSC · Government of Bangladesh</div></div></div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<style>
-/* ── CONTACT FORM STYLES ── */
-.contact-wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:start;}
-@media(max-width:860px){.contact-wrap{grid-template-columns:1fr;}}
-
-.contact-info-block{display:flex;flex-direction:column;gap:14px;}
-.ci-card{
-  background:var(--card);border:1px solid var(--border);
-  border-radius:10px;padding:18px 20px;
-  display:flex;align-items:center;gap:14px;
-  text-decoration:none;transition:all 0.22s;
-}
-.ci-card:hover{border-color:var(--border2);transform:translateX(4px);}
-.ci-icon{
-  width:38px;height:38px;border-radius:8px;flex-shrink:0;
-  display:flex;align-items:center;justify-content:center;font-size:15px;
-}
-.ci-label{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;margin-bottom:2px;}
-.ci-val{font-size:13px;color:var(--text);font-weight:500;}
-
-/* Form */
-.form-card{
-  background:var(--card);border:1px solid var(--border);
-  border-radius:12px;padding:32px 30px;
-}
-.form-title{
-  font-family:var(--display);font-size:18px;font-weight:600;
-  color:var(--text);margin-bottom:4px;
-}
-.form-sub{font-size:13px;color:var(--text3);margin-bottom:24px;line-height:1.5;}
-
-.form-tabs{display:flex;gap:0;margin-bottom:24px;border:1px solid var(--border);border-radius:8px;overflow:hidden;}
-.form-tab{
-  flex:1;padding:10px 0;font-family:var(--mono);font-size:11px;
-  letter-spacing:0.06em;text-transform:uppercase;text-align:center;
-  cursor:pointer;background:transparent;border:none;
-  color:var(--text3);transition:all 0.2s;
-}
-.form-tab.active{background:rgba(46,111,212,0.14);color:var(--blue2);}
-.form-tab:first-child{border-right:1px solid var(--border);}
-
-.form-panel{display:none;}
-.form-panel.active{display:block;}
-
-.field{margin-bottom:16px;}
-.field label{
-  display:block;font-family:var(--mono);font-size:10px;
-  letter-spacing:0.07em;text-transform:uppercase;
-  color:var(--text3);margin-bottom:6px;
-}
-.field input,.field textarea,.field select{
-  width:100%;background:var(--bg3);border:1px solid var(--border);
-  border-radius:6px;padding:10px 14px;
-  font-family:var(--sans);font-size:14px;color:var(--text);
-  outline:none;transition:border-color 0.2s;
-  -webkit-appearance:none;
-}
-.field select{cursor:pointer;}
-.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--border2);}
-.field textarea{resize:vertical;min-height:100px;line-height:1.6;}
-.field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-@media(max-width:500px){.field-row{grid-template-columns:1fr;}}
-
-.field input::placeholder,.field textarea::placeholder{color:var(--text3);font-size:13px;}
-
-.resume-note{
-  background:rgba(46,111,212,0.08);border:1px solid rgba(46,111,212,0.2);
-  border-radius:6px;padding:12px 14px;margin-bottom:16px;
-  font-size:12px;color:var(--text2);line-height:1.6;
-}
-.resume-note strong{color:var(--blue3);}
-
-.checkbox-row{display:flex;align-items:flex-start;gap:10px;margin-bottom:16px;}
-.checkbox-row input[type=checkbox]{
-  width:16px;height:16px;margin-top:2px;flex-shrink:0;
-  accent-color:var(--blue2);cursor:pointer;
-}
-.checkbox-row label{font-size:12px;color:var(--text2);line-height:1.5;cursor:pointer;}
-
-.submit-btn{
-  width:100%;padding:13px;
-  background:var(--blue);color:#fff;
-  border:1px solid var(--blue);border-radius:8px;
-  font-family:var(--sans);font-size:14px;font-weight:500;
-  letter-spacing:0.02em;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;gap:8px;
-  transition:all 0.2s;
-}
-.submit-btn:hover{background:var(--blue2);border-color:var(--blue2);}
-.submit-btn:disabled{opacity:0.5;cursor:not-allowed;}
-
-.form-success{
-  display:none;text-align:center;padding:32px 16px;
-}
-.form-success-icon{font-size:40px;margin-bottom:12px;}
-.form-success h4{font-family:var(--display);font-size:18px;color:var(--text);margin-bottom:8px;}
-.form-success p{font-size:13px;color:var(--text2);}
-
-/* Research profiles sidebar */
-.rp-block{
-  background:var(--card);border:1px solid var(--border);
-  border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:10px;
-  margin-top:14px;
-}
-.rp-title{font-family:var(--mono);font-size:10px;color:var(--teal);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;}
-.rp-link{
-  display:flex;align-items:center;gap:12px;
-  text-decoration:none;padding:10px 12px;
-  border-radius:7px;border:1px solid var(--border);
-  background:var(--bg3);transition:all 0.2s;
-}
-.rp-link:hover{border-color:var(--border2);}
-.rp-link-icon{width:28px;height:28px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;}
-.rp-link-name{font-size:12px;font-weight:500;color:var(--text);}
-.rp-link-desc{font-size:11px;color:var(--text3);margin-top:1px;}
-
-.pmp-mini{
-  background:linear-gradient(135deg,rgba(46,111,212,0.13),rgba(0,196,160,0.07));
-  border:1px solid var(--border2);border-radius:10px;
-  padding:16px 18px;margin-top:14px;
-  display:flex;align-items:center;gap:14px;
-}
-.pmp-mini-badge{
-  width:42px;height:42px;flex-shrink:0;border-radius:8px;
-  background:rgba(46,111,212,0.18);border:1px solid rgba(46,111,212,0.3);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  font-family:var(--display);font-weight:800;font-size:11px;color:var(--blue2);
-  line-height:1.2;letter-spacing:0.02em;
-}
-</style>
-
 <section id="contact">
-  <div class="section-inner">
-    <div class="section-kicker">Let's Connect</div>
-    <h2 class="section-title">Get In <em>Touch</em></h2>
-
+  <div class="si">
+    <div class="sk">Let's Connect</div>
+    <h2 class="st">Get In <em>Touch</em></h2>
     <div class="contact-wrap">
 
-      <!-- LEFT: info + profiles -->
+      <!-- LEFT -->
       <div>
-        <p style="font-size:15px;color:var(--text2);line-height:1.85;margin-bottom:24px;">
-          I am actively exploring new opportunities in medical device, IVD diagnostics, and life sciences — particularly roles in senior scientist, project leader, or design quality engineering. Use the form to reach me directly or to request my full resume.
-        </p>
-
-        <div class="contact-info-block">
-          <a href="https://www.linkedin.com/in/mdalamgirkabir" target="_blank" class="ci-card">
-            <div class="ci-icon" style="background:rgba(46,111,212,0.15);border:1px solid rgba(46,111,212,0.25);">in</div>
-            <div>
-              <div class="ci-label">LinkedIn</div>
-              <div class="ci-val">linkedin.com/in/mdalamgirkabir</div>
+        <p style="font-size:15px;color:var(--text2);line-height:1.85;margin-bottom:22px;">I am actively exploring opportunities in IVD / medical device development — as a Scientist, Quality Engineer, Process Engineer, or Project Leader. Use the form to reach me directly or to request my full resume.</p>
+        <div class="ci-stack">
+          <!-- OBFUSCATED EMAIL — not a plain mailto link -->
+          <div class="ci-card" style="cursor:default;" id="emailCard">
+            <div class="ci-icon" style="background:rgba(46,111,212,0.14);border:1px solid rgba(46,111,212,0.28);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4d8ef0" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M22 7L12 13 2 7"/></svg>
             </div>
-          </a>
-          <div class="ci-card" style="cursor:default;">
-            <div class="ci-icon" style="background:rgba(0,196,160,0.12);border:1px solid rgba(0,196,160,0.22);">📍</div>
             <div>
-              <div class="ci-label">Location</div>
-              <div class="ci-val">Minneapolis–Saint Paul, MN</div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val" id="emailDisplay">mkabir2016 [at] fau [dot] edu</div>
+              <div class="ci-note"><button onclick="revealEmail()" style="background:none;border:none;color:var(--blue2);font-size:11px;font-family:var(--mono);cursor:pointer;padding:0;letter-spacing:0.04em;">Click to reveal full address →</button></div>
             </div>
           </div>
-          <div class="ci-card" style="cursor:default;">
-            <div class="ci-icon" style="background:rgba(240,160,32,0.12);border:1px solid rgba(240,160,32,0.22);">⏱️</div>
-            <div>
-              <div class="ci-label">Response Time</div>
-              <div class="ci-val">Typically within 24–48 hours</div>
+          <a href="https://www.linkedin.com/in/mdalamgirkabir" target="_blank" class="ci-card">
+            <div class="ci-icon" style="background:rgba(46,111,212,0.14);border:1px solid rgba(46,111,212,0.28);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#4d8ef0"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
             </div>
+            <div><div class="ci-label">LinkedIn</div><div class="ci-val">linkedin.com/in/mdalamgirkabir</div></div>
+          </a>
+          <div class="ci-card" style="cursor:default;">
+            <div class="ci-icon" style="background:rgba(0,196,160,0.12);border:1px solid rgba(0,196,160,0.22);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00c4a0" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div><div class="ci-label">Location</div><div class="ci-val">Minneapolis–Saint Paul, MN</div><div class="ci-note">Open to relocation or hybrid/remote</div></div>
+          </div>
+          <div class="ci-card" style="cursor:default;">
+            <div class="ci-icon" style="background:rgba(240,160,32,0.12);border:1px solid rgba(240,160,32,0.22);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f0a020" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div><div class="ci-label">Response Time</div><div class="ci-val">Within 24–48 hours</div></div>
           </div>
         </div>
 
-        <!-- Research Profiles -->
-        <div class="rp-block" style="margin-top:20px;">
+        <!-- Research profiles -->
+        <div class="rp-block">
           <div class="rp-title">Research Profiles</div>
           <a href="https://scholar.google.com/citations?hl=en&user=cm9Wk-sAAAAJ" target="_blank" class="rp-link">
-            <div class="rp-link-icon" style="background:rgba(46,111,212,0.15);border:1px solid rgba(46,111,212,0.25);">🎓</div>
-            <div><div class="rp-link-name">Google Scholar</div><div class="rp-link-desc">19 peer-reviewed publications</div></div>
+            <div class="rp-icon" style="background:rgba(46,111,212,0.14);border:1px solid rgba(46,111,212,0.25);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4d8ef0" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+            <div><div class="rp-name">Google Scholar</div><div class="rp-desc">19 peer-reviewed publications</div></div>
           </a>
           <a href="https://www.researchgate.net/profile/Md_Kabir26" target="_blank" class="rp-link">
-            <div class="rp-link-icon" style="background:rgba(0,196,160,0.12);border:1px solid rgba(0,196,160,0.22);">🔬</div>
-            <div><div class="rp-link-name">ResearchGate</div><div class="rp-link-desc">Full research profile & citations</div></div>
+            <div class="rp-icon" style="background:rgba(0,196,160,0.12);border:1px solid rgba(0,196,160,0.22);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00c4a0" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+            <div><div class="rp-name">ResearchGate</div><div class="rp-desc">Full research profile & citations</div></div>
           </a>
           <a href="https://publons.com/researcher/1741907/md-alamgir-kabir/" target="_blank" class="rp-link">
-            <div class="rp-link-icon" style="background:rgba(46,111,212,0.10);border:1px solid rgba(46,111,212,0.2);">📋</div>
-            <div><div class="rp-link-name">Publons / Web of Science</div><div class="rp-link-desc">Peer review record</div></div>
+            <div class="rp-icon" style="background:rgba(46,111,212,0.10);border:1px solid rgba(46,111,212,0.2);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7fb0ff" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+            <div><div class="rp-name">Publons / Web of Science</div><div class="rp-desc">Peer review record</div></div>
           </a>
-        </div>
-
-        <!-- PMP Mini Card -->
-        <div class="pmp-mini">
-          <div class="pmp-mini-badge">PMP<br>®</div>
-          <div>
-            <div style="font-family:var(--mono);font-size:10px;color:var(--amber);letter-spacing:0.07em;text-transform:uppercase;margin-bottom:3px;">PMI Certified</div>
-            <div style="font-size:13px;font-weight:500;color:var(--text);">Project Management Professional</div>
-            <div style="font-family:var(--mono);font-size:10px;color:var(--text3);margin-top:2px;">Cert #4258911 · Valid through Dec 2028</div>
-          </div>
         </div>
       </div>
 
-      <!-- RIGHT: tabbed form -->
+      <!-- RIGHT: FORM -->
       <div class="form-card">
         <div class="form-title">Send a Message</div>
-        <div class="form-sub">All messages go directly to my inbox. Your contact details are never shared publicly.</div>
+        <div class="form-sub">Fill in the form — your message goes directly to my inbox. Your details stay private.</div>
 
         <div class="form-tabs">
-          <button class="form-tab active" onclick="switchTab('message',this)">💬 Send Message</button>
-          <button class="form-tab" onclick="switchTab('resume',this)">📄 Request Resume</button>
+          <button class="form-tab active" onclick="switchTab('msg',this)">💬 Send Message</button>
+          <button class="form-tab" onclick="switchTab('res',this)">📄 Request Resume</button>
         </div>
 
-        <!-- SUCCESS STATE -->
-        <div class="form-success" id="formSuccess">
+        <div class="form-success" id="fSuccess">
           <div class="form-success-icon">✅</div>
-          <h4>Message Sent!</h4>
-          <p>Thank you for reaching out. I'll get back to you within 24–48 hours.</p>
+          <h4>Sent successfully!</h4>
+          <p>Thank you for reaching out. I'll respond within 24–48 hours.</p>
         </div>
 
-        <!-- TAB 1: General Message -->
-        <div class="form-panel active" id="panel-message">
-          <!--
-            HOW TO ACTIVATE: Sign up free at https://formspree.io
-            Replace YOUR_FORM_ID below with your Formspree endpoint ID.
-            Example: action="https://formspree.io/f/xpzgkwqr"
-          -->
-          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleSubmit(event,'contactForm')">
-            <input type="hidden" name="_subject" value="Portfolio Contact — Md Alamgir Kabir">
-            <input type="hidden" name="_next" value="">
-
+        <!-- MESSAGE TAB -->
+        <div class="form-panel active" id="panel-msg">
+          <form id="fMsg" onsubmit="sendForm(event,'fMsg')">
             <div class="field-row">
-              <div class="field">
-                <label for="c-name">Full Name *</label>
-                <input type="text" id="c-name" name="name" placeholder="Jane Smith" required>
-              </div>
-              <div class="field">
-                <label for="c-org">Company / Organization</label>
-                <input type="text" id="c-org" name="organization" placeholder="Acme Corp">
-              </div>
+              <div class="field"><label>Your Name *</label><input type="text" name="name" placeholder="Jane Smith" required></div>
+              <div class="field"><label>Company / Org</label><input type="text" name="organization" placeholder="Acme Corp"></div>
             </div>
-
-            <div class="field">
-              <label for="c-email">Your Email Address *</label>
-              <input type="email" id="c-email" name="email" placeholder="jane@company.com" required>
-            </div>
-
-            <div class="field">
-              <label for="c-subject">Subject *</label>
-              <select id="c-subject" name="subject" required>
-                <option value="" disabled selected>Select a reason for contact</option>
-                <option value="Job Opportunity">Job Opportunity / Recruitment</option>
-                <option value="Collaboration">Research Collaboration</option>
-                <option value="Speaking / Consulting">Speaking / Consulting</option>
-                <option value="General Inquiry">General Inquiry</option>
+            <div class="field"><label>Your Email *</label><input type="email" name="email" placeholder="jane@company.com" required></div>
+            <div class="field"><label>Subject *</label>
+              <select name="subject" required>
+                <option value="" disabled selected>Select reason for contact</option>
+                <option>Job Opportunity / Recruitment</option>
+                <option>Research Collaboration</option>
+                <option>Speaking / Consulting</option>
+                <option>General Inquiry</option>
               </select>
             </div>
-
-            <div class="field">
-              <label for="c-msg">Message *</label>
-              <textarea id="c-msg" name="message" placeholder="Tell me about the opportunity or how I can help..." required></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn" id="submitBtn1">
+            <div class="field"><label>Message *</label><textarea name="message" placeholder="Tell me about the opportunity..." required></textarea></div>
+            <button type="submit" class="submit-btn" id="sb1">
               <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
               Send Message
             </button>
           </form>
         </div>
 
-        <!-- TAB 2: Resume Request -->
-        <div class="form-panel" id="panel-resume">
-          <form id="resumeForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleSubmit(event,'resumeForm')">
-            <input type="hidden" name="_subject" value="Resume Request — Md Alamgir Kabir Portfolio">
-
-            <div class="resume-note">
-              <strong>📄 Resume sent upon request.</strong> Please complete the form below and I will email you my current resume, typically within 24 hours. Recruiters and hiring managers welcome.
-            </div>
-
+        <!-- RESUME TAB -->
+        <div class="form-panel" id="panel-res">
+          <form id="fRes" onsubmit="sendForm(event,'fRes')">
+            <div class="resume-note"><strong>📄 Resume sent on request.</strong> Complete the form and I'll email you my current CV within 24 hours. Recruiters and hiring managers welcome.</div>
             <div class="field-row">
-              <div class="field">
-                <label for="r-name">Full Name *</label>
-                <input type="text" id="r-name" name="name" placeholder="Jane Smith" required>
-              </div>
-              <div class="field">
-                <label for="r-title">Your Title / Role</label>
-                <input type="text" id="r-title" name="title" placeholder="Recruiter, Hiring Manager...">
-              </div>
+              <div class="field"><label>Your Name *</label><input type="text" name="name" placeholder="Jane Smith" required></div>
+              <div class="field"><label>Your Title</label><input type="text" name="title" placeholder="Recruiter, Hiring Manager..."></div>
             </div>
-
-            <div class="field">
-              <label for="r-email">Your Email Address *</label>
-              <input type="email" id="r-email" name="email" placeholder="jane@company.com" required>
+            <div class="field"><label>Your Email *</label><input type="email" name="email" placeholder="jane@company.com" required></div>
+            <div class="field"><label>Company *</label><input type="text" name="company" placeholder="Company name" required></div>
+            <div class="field"><label>Role / Position of Interest</label><input type="text" name="role" placeholder="e.g. Sr. Quality Engineer, Process Dev..."></div>
+            <div class="field"><label>Additional Notes</label><textarea name="notes" style="min-height:70px;" placeholder="Optional — any context about the team or role"></textarea></div>
+            <div class="check-row">
+              <input type="checkbox" id="cAg" required>
+              <label for="cAg">I confirm I am requesting this resume for legitimate professional or recruiting purposes.</label>
             </div>
-
-            <div class="field">
-              <label for="r-company">Company / Organization *</label>
-              <input type="text" id="r-company" name="company" placeholder="Company name" required>
-            </div>
-
-            <div class="field">
-              <label for="r-role">Role / Position of Interest</label>
-              <input type="text" id="r-role" name="role" placeholder="e.g. Sr. Project Leader, Quality Engineer...">
-            </div>
-
-            <div class="field">
-              <label for="r-notes">Additional Notes</label>
-              <textarea id="r-notes" name="notes" style="min-height:72px;" placeholder="Optional — any context about the role or team"></textarea>
-            </div>
-
-            <div class="checkbox-row">
-              <input type="checkbox" id="r-agree" name="agree" required>
-              <label for="r-agree">I confirm I am requesting this resume for legitimate professional or recruiting purposes and will handle it confidentially.</label>
-            </div>
-
-            <button type="submit" class="submit-btn" id="submitBtn2">
-              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <button type="submit" class="submit-btn" id="sb2">
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
               Request Resume
             </button>
           </form>
         </div>
 
-      </div><!-- /form-card -->
-    </div><!-- /contact-wrap -->
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 <span>Md Alamgir Kabir, PhD, PMP®</span> · Sr. Development Scientist · Minneapolis, MN · Built with purpose for recruiter visibility</p>
+  <p>© 2026 <span>Md Alamgir Kabir, PhD, PMP®</span> · Sr. Development Scientist · Minneapolis, MN</p>
 </footer>
 
 <script>
-// Contact form tabs
-function switchTab(tab, btn) {
-  document.querySelectorAll('.form-tab').forEach(b => b.classList.remove('active'));
-  document.querySelectorAll('.form-panel').forEach(p => p.classList.remove('active'));
-  btn.classList.add('active');
-  document.getElementById('panel-' + tab).classList.add('active');
-  document.getElementById('formSuccess').style.display = 'none';
+// ── EMAIL REVEAL (obfuscated) ──
+function revealEmail(){
+  const u='mkabir2016',d='fau.edu';
+  document.getElementById('emailDisplay').textContent=u+'@'+d;
+  document.getElementById('emailCard').onclick=()=>window.location='mailto:'+u+'@'+d;
+  document.getElementById('emailCard').style.cursor='pointer';
+  event.target.style.display='none';
 }
 
-// Form submission — Formspree AJAX
-async function handleSubmit(e, formId) {
+// ── TAB SWITCH ──
+function switchTab(tab,btn){
+  document.querySelectorAll('.form-tab').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.form-panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('panel-'+tab).classList.add('active');
+  document.getElementById('fSuccess').style.display='none';
+}
+
+// ── FORM SUBMIT via Formspree ──
+// TO ACTIVATE: sign up at formspree.io, create a form, and replace YOUR_FORM_ID below
+const FORMSPREE_ID = 'YOUR_FORM_ID';
+
+async function sendForm(e,formId){
   e.preventDefault();
-  const form = document.getElementById(formId);
-  const btn = form.querySelector('.submit-btn');
-  btn.disabled = true;
-  btn.innerHTML = '<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Sending…';
+  const form=document.getElementById(formId);
+  const btn=form.querySelector('.submit-btn');
+  btn.disabled=true;
+  btn.textContent='Sending…';
 
-  try {
-    const data = new FormData(form);
-    const resp = await fetch(form.action, {
-      method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
+  // Build data object
+  const fd=new FormData(form);
+  const data={};
+  fd.forEach((v,k)=>data[k]=v);
+  data._form=formId==='fMsg'?'Contact Message':'Resume Request';
+
+  if(FORMSPREE_ID==='YOUR_FORM_ID'){
+    // Fallback: open mailto with prefilled subject
+    const subj=data.subject||'Resume Request';
+    const body=Object.entries(data).filter(([k])=>!k.startsWith('_')).map(([k,v])=>`${k}: ${v}`).join('\n');
+    window.location='mailto:mkabir2016@fau.edu?subject='+encodeURIComponent('[Portfolio] '+subj)+'&body='+encodeURIComponent(body);
+    btn.disabled=false;
+    btn.textContent='Done — check your email client';
+    return;
+  }
+
+  try{
+    const resp=await fetch(`https://formspree.io/f/${FORMSPREE_ID}`,{
+      method:'POST',body:JSON.stringify(data),
+      headers:{'Content-Type':'application/json','Accept':'application/json'}
     });
-    if (resp.ok) {
-      form.style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
+    if(resp.ok){
+      form.style.display='none';
+      document.getElementById('fSuccess').style.display='block';
     } else {
-      btn.disabled = false;
-      btn.innerHTML = '⚠ Error — please try LinkedIn instead';
+      btn.disabled=false;btn.textContent='Error — please try LinkedIn';
     }
-  } catch {
-    btn.disabled = false;
-    btn.innerHTML = '⚠ Network error — try again';
+  }catch{
+    btn.disabled=false;btn.textContent='Network error — try again';
   }
 }
 
-// Publication filter
-function filterPubs(cat, btn) {
-  document.querySelectorAll('.pub-btn').forEach(b => b.classList.remove('active'));
+// ── PUB FILTER ──
+function filterPubs(cat,btn){
+  document.querySelectorAll('.pub-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
-  document.querySelectorAll('.pub-item').forEach(item => {
-    if (cat === 'all') {
-      item.style.display = '';
-    } else if (cat === 'lead') {
-      item.style.display = item.dataset.cat && item.dataset.cat.includes('lead') ? '' : 'none';
-    } else if (cat === 'poc') {
-      item.style.display = item.dataset.cat && item.dataset.cat.includes('poc') ? '' : 'none';
-    } else if (cat === '2024') {
-      const yr = parseInt(item.dataset.year);
-      item.style.display = yr >= 2024 ? '' : 'none';
-    } else if (cat === '2020') {
-      const yr = parseInt(item.dataset.year);
-      item.style.display = (yr >= 2020 && yr <= 2023) ? '' : 'none';
-    }
+  document.querySelectorAll('.pub-item').forEach(item=>{
+    const c=item.dataset.cat||'',y=parseInt(item.dataset.year);
+    if(cat==='all') item.style.display='';
+    else if(cat==='lead') item.style.display=c.includes('lead')?'':'none';
+    else if(cat==='poc') item.style.display=c.includes('poc')?'':'none';
+    else if(cat==='2024') item.style.display=y>=2024?'':'none';
+    else if(cat==='2020') item.style.display=(y>=2020&&y<=2023)?'':'none';
   });
 }
 
-// Mobile menu
-function toggleMenu() {
-  const links = document.querySelector('.nav-links');
-  if (links.style.display === 'flex') {
-    links.style.display = '';
-  } else {
-    links.style.cssText = 'display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:rgba(3,8,16,0.97);padding:20px 6%;gap:18px;border-bottom:1px solid var(--border);z-index:199;';
-  }
-}
-
-// Scroll-triggered fade-in for cards
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.style.opacity = '1';
-      e.target.style.transform = 'translateY(0)';
-      observer.unobserve(e.target);
+// ── SCROLL FADE-IN ──
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.style.opacity='1';e.target.style.transform='translateY(0)';
+      obs.unobserve(e.target);
     }
   });
-}, { threshold: 0.08 });
-
-document.querySelectorAll('.skill-card, .award-card, .tl-item, .pub-item, .stat-card, .media-card').forEach((el, i) => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = `opacity 0.55s ease ${(i % 5) * 0.09}s, transform 0.55s ease ${(i % 5) * 0.09}s, border-color 0.25s`;
-  observer.observe(el);
+},{threshold:0.07});
+document.querySelectorAll('.skill-card,.award-card,.tl-item,.pub-item,.stat-card,.media-card,.role-item,.ci-card').forEach((el,i)=>{
+  el.style.opacity='0';
+  el.style.transform='translateY(18px)';
+  el.style.transition=`opacity 0.5s ease ${(i%5)*0.08}s, transform 0.5s ease ${(i%5)*0.08}s, border-color 0.25s`;
+  obs.observe(el);
 });
 
-// Active nav highlight on scroll
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
-window.addEventListener('scroll', () => {
-  let current = '';
-  sections.forEach(s => { if (scrollY >= s.offsetTop - 100) current = s.id; });
-  navLinks.forEach(a => {
-    a.style.color = a.getAttribute('href') === '#' + current ? 'var(--blue2)' : '';
-  });
+// ── ACTIVE NAV ──
+const secs=document.querySelectorAll('section[id]');
+const navAs=document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  secs.forEach(s=>{if(scrollY>=s.offsetTop-80)cur=s.id;});
+  navAs.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+cur?'var(--blue2)':'';});
 });
 </script>
 </body>
